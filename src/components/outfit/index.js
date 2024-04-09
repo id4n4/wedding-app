@@ -1,0 +1,1 @@
+export { Outfit } from './Outfit'
