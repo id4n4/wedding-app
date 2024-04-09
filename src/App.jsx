@@ -1,9 +1,10 @@
-import { Hero } from './components'
+import { Counter, Hero } from './components'
 
 function App () {
   return (
-    <section className='h-full w-full bg-background'>
+    <section className='w-full h-full bg-background'>
       <Hero />
+      <Counter />
     </section>
   )
 }

@@ -14,3 +14,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.lobster {
+  font-family: "Lobster Two", sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+
+.lobster h2 {
+  font-size: 1.75rem;
+}
+
+.lobster p {
+  font-size: 1.25rem;
+}
