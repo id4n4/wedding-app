@@ -1,3 +1,5 @@
+import { IoHeartOutline } from 'react-icons/io5'
+
 export const Week = () => {
   return (
     <div className='flex flex-col items-center space-y-2'>
@@ -27,9 +29,10 @@ export const Week = () => {
           <h2>vie</h2>
           <p>23</p>
         </div>
-        <div className='lobster'>
+        <div className='relative lobster'>
           <h2>sab</h2>
           <p>24</p>
+          <IoHeartOutline className='absolute text-5xl -bottom-2.5 -left-1.5 ' />
         </div>
 
       </div>
