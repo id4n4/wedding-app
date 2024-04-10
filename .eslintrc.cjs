@@ -22,5 +22,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     '@stylistic/indent': ['error', 2],
     '@stylistic/jsx-quotes': ['error', 'prefer-single'],
+    'react/self-closing-comp': 'error',
+    'react/prop-types': 'off',
   }
 }

@@ -29,7 +29,7 @@ export const Counter = () => {
     return () => clearTimeout(timer)
   })
   return (
-    <section className='relative'>
+    <section className='relative h-[300px]'>
       <div className='relative z-0'>
         <img src={waveDOWN} alt='waveUP' className='w-full' />
       </div>
