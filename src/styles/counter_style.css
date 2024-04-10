@@ -1,0 +1,26 @@
+/* animación cambio de escala 0.5 a 1.5 infinito */
+
+
+
+
+
+.ring_counter {
+  animation: glowing 15s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+    transform: scale(1);
+    rotate: 0deg;
+  }
+
+  50% {
+    transform: scale(1.03);
+    rotate: 180deg;
+  }
+
+  100% {
+    transform: scale(1);
+    rotate: 360deg;
+  }
+}

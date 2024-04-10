@@ -4,7 +4,7 @@ export const Week = () => {
   return (
     <div className='flex flex-col items-center space-y-2'>
       <h1 className='text-4xl tracking-widest uppercase'>Agosto</h1>
-      <div className='flex justify-center gap-7'>
+      <div className='flex justify-center gap-2 md:gap-7'>
         <div className='lobster'>
           <h2>Dom</h2>
           <p>18</p>
