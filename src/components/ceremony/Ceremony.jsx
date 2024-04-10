@@ -10,7 +10,7 @@ export const Ceremony = () => {
       <WaveLines />
       <main className='flex flex-col items-center justify-center gap-3' >
         <TitleSection title='Ceremonia' />
-        <img src={ChurchImage} alt='Iglesia' />
+        <img src={ChurchImage} alt='Iglesia' loading='lazy' decoding='async'/>
         <div className='text-xl text-center uppercase text-primary'>
           <p>Iglesia la medalla milagrosa</p>
           <p>Cereté - Córdoba</p>

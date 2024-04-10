@@ -17,7 +17,7 @@ export const Hero = () => {
         </div>
       </div>
       <div>
-        <img src={waveUP} alt='waveUP' className='w-full' />
+        <img src={waveUP} alt='waveUP' className='w-full' loading='lazy' decoding='async'/>
       </div>
     </section>
   )

@@ -8,7 +8,7 @@ export const Reception = () => {
     <section className='py-5'>
       <main className='flex flex-col items-center justify-center gap-3' >
         <TitleSection title='Recepción' />
-        <img src={ChampanImage} alt='champan' />
+        <img src={ChampanImage} alt='champan' loading='lazy' decoding='async'/>
         <div className='text-xl text-center uppercase text-primary'>
           <p>Iglesia la medalla milagrosa</p>
           <p>Cereté - Córdoba</p>

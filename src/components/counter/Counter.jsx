@@ -31,7 +31,7 @@ export const Counter = () => {
   return (
     <section className='relative h-[300px]'>
       <div className='relative z-0'>
-        <img src={waveDOWN} alt='waveUP' className='w-full' />
+        <img src={waveDOWN} alt='waveUP' className='w-full' loading='lazy' decoding='async'/>
       </div>
       <div className='absolute left-0 right-0 z-50 flex justify-center -top-7'>
 
