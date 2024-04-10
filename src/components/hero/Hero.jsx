@@ -4,7 +4,7 @@ import waveUP from '../../assets/waveUp.svg'
 
 export const Hero = () => {
   return (
-    <section className='font-sans min-h-[500px] w-full bg-primary h-full flex flex-col '>
+    <section className='font-sans min-h-[700px] w-full bg-primary h-full flex flex-col '>
       <div className='flex items-center justify-center flex-grow'>
         <div className='max-w-[1000px] text-main flex flex-col justify-center items-center gap-5 '>
           <Week />

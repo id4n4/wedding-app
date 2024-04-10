@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root {
+  --background: #fffffe;
+  --darkBackground: #eaddcf;
+  --headline: #020826;
+  --paragraph: #716040;
+  --button: #716040;
+  --buttonText: #fffffe;
+  --stroke: #020826;
+  --main: #fffffe;
+  --primary: #8c7851;
+  --secondary: #eaddcf;
+  --tertiary: #f25042;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -13,6 +28,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  scrollbar-color: var(--primary) var(--darkBackground);
+  scrollbar-width: thin;
 }
 
 .lobster {
