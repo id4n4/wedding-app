@@ -1,4 +1,11 @@
-import { Ceremony, Counter, Hero, Outfit, Reception, SharePhoto } from './components'
+import {
+  Ceremony,
+  Counter,
+  Hero,
+  Outfit,
+  Reception,
+  SharePhoto
+} from './components'
 
 function App () {
   return (

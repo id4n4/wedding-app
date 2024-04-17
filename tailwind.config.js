@@ -23,18 +23,18 @@ export default {
         buttonText: "#fffffe",
         stroke: "#020826",
         main: "#fffffe",
-        primary: "#8c7851",
+        primary: "#8C6239",
         secondary: "#eaddcf",
         tertiary: "#f25042",
         // light mode
         tremor: {
           brand: {
-            faint: "#8c7851",
-            muted: "#8c7851",
-            subtle: "#8c7851",
-            DEFAULT: "#8c7851",
-            emphasis: "#8c7851",
-            inverted: "#ffffff",
+            faint: "#FFF2CC", // Puedes usar un tono más claro para el color tenue
+            muted: "#FFE599", // Puedes usar un tono más claro para el color apagado
+            subtle: "#FFD966", // Puedes usar un tono más claro para el color sutil
+            DEFAULT: "#C9961A", // Este sería el color principal proporcionado
+            emphasis: "#7F6000", // Puedes usar un tono más oscuro para el color de énfasis
+            inverted: colors.white, // Color invertido
           },
           background: {
             muted: colors.gray[50],

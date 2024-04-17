@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import waveDOWN from '../../assets/waveDown.svg'
 import '../../styles/counter_style.css'
+import points from '../../assets/SVGs/groupPoints.svg'
 
 export const Counter = () => {
   const calculateTimeLeft = () => {
@@ -40,7 +41,7 @@ export const Counter = () => {
           <div className='flex gap-5 lobster'>
             <div className='flex flex-col items-center'>
               <p >{timeLeft.days}</p>
-              <h2>Días</h2>
+              <h2 >Días</h2>
             </div>
             <div className='flex flex-col items-center'>
               <p>{timeLeft.hours}</p>
@@ -61,6 +62,8 @@ export const Counter = () => {
         <div className='ring_counter ring-2 ring-yellow-600 w-[21rem] h-[19rem] rounded-full absolute top-0' />
         <div className='ring_counter ring-2 ring-yellow-700 w-[19rem] h-[20rem] rounded-full absolute top-1' />
         <div className='ring_counter ring-2 ring-yellow-700 w-[20rem] h-[20rem] rounded-full absolute -top-2' />
+
+        <img src={points} alt='puntos' className='w-[25rem] absolute -top-14'/>
       </div>
     </section>
   )
