@@ -37,22 +37,22 @@ export const Counter = () => {
 
         <div className='flex flex-col items-center justify-center space-y-4 text-4xl rounded-full shadow-2xl text-paragraph w-[19rem] h-[19rem] bg-background ring-1 ring-primary z-10'>
           <h1 className='tracking-widest uppercase'>Faltan</h1>
-          <div className='flex gap-3 lobster'>
+          <div className='flex gap-5 lobster'>
             <div className='flex flex-col items-center'>
-              <h2>{timeLeft.days}</h2>
-              <p>Días</p>
+              <p >{timeLeft.days}</p>
+              <h2>Días</h2>
             </div>
             <div className='flex flex-col items-center'>
-              <h2>{timeLeft.hours}</h2>
-              <p>Hs</p>
+              <p>{timeLeft.hours}</p>
+              <h2>Hs</h2>
             </div>
             <div className='flex flex-col items-center'>
-              <h2>{timeLeft.minutes}</h2>
-              <p>Min</p>
+              <p>{timeLeft.minutes}</p>
+              <h2>Min</h2>
             </div>
             <div className='flex flex-col items-center'>
-              <h2>{timeLeft.seconds}</h2>
-              <p>Seg</p>
+              <p>{timeLeft.seconds}</p>
+              <h2>Seg</h2>
             </div>
           </div>
         </div>

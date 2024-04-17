@@ -11,7 +11,7 @@ export const Hero = () => {
           <Title />
           <div className='max-w-[800px] mx-auto'>
             <p className='text-xl text-center uppercase text-balance'>
-          Uno solo puede ser vencido, pero dos pueden resistir; !la cuerda de tres hilos no se rompe fácilmente!
+          Uno solo puede ser vencido, pero dos pueden resistir. !la cuerda de tres hilos no se rompe fácilmente!
             </p>
           </div>
         </div>

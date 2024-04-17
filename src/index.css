@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: joseph;
+  src: url("./assets/fonts/josephsophia.ttf");
+}
+
+@font-face {
+  font-family: "trajan";
+  src: url("./assets/fonts/trajanPro.ttf");
+}
+
+h2 {
+  font-family: 'joseph';
+  font-size: 1.75rem;
+}
+
+p {
+  font-family: 'trajan';
+  font-size: 1.25rem;
+}
+
+h1 {
+  font-family: 'trajan';
+  font-size: 2.25rem;
+
+}
+
 
 :root {
   --background: #fffffe;
@@ -15,6 +41,14 @@
   --primary: #8c7851;
   --secondary: #eaddcf;
   --tertiary: #f25042;
+}
+
+.joseph {
+  font-family: joseph;
+}
+
+.trajan {
+  font-family: trajan;
 }
 
 :root {

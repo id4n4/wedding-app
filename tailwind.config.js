@@ -19,7 +19,7 @@ export default {
         darkBackground: "#eaddcf",
         headline: "#020826",
         paragraph: "#716040",
-        button: "#716040",
+        button: "#C9961A",
         buttonText: "#fffffe",
         stroke: "#020826",
         main: "#fffffe",

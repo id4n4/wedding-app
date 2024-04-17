@@ -1,4 +1,4 @@
-import { Ceremony, Counter, Hero, Outfit, Reception } from './components'
+import { Ceremony, Counter, Hero, Outfit, Reception, SharePhoto } from './components'
 
 function App () {
   return (
@@ -8,6 +8,7 @@ function App () {
       <Ceremony />
       <Reception />
       <Outfit />
+      <SharePhoto />
     </section>
   )
 }
