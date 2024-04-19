@@ -2,22 +2,25 @@ import { TitleSection } from '../TitleSection'
 import { WaveLines } from './components/WaveLines'
 import { Button } from '@tremor/react'
 import { MdLocationOn } from 'react-icons/md'
-import ChurchImage from '../../assets/img/iglesia.png'
+import ChurchImage from '../../assets/SVGs/church.svg'
+import { SectionLayout } from '../../layouts/SectionLayout'
+import { MainLayout } from '../../layouts/MainLayout'
+import { ImgTemplate } from '../generalComponents/ImgTemplate'
 
 export const Ceremony = () => {
   return (
-    <section className='py-5'>
+    <SectionLayout>
       <WaveLines />
-      <main className='flex flex-col items-center justify-center gap-3' >
+      <MainLayout >
         <TitleSection title='Ceremonia' />
-        <img src={ChurchImage} alt='Iglesia' loading='lazy' decoding='async'/>
-        <div className='text-xl text-center uppercase text-primary'>
+        <ImgTemplate src={ChurchImage} alt='Iglesia' />
+        <div className='text-lg text-center uppercase md:text-xl text-primary'>
           <p>Iglesia la medalla milagrosa</p>
           <p>Cereté - Córdoba</p>
           <p>5:00 P.M.</p>
         </div>
         <Button icon={MdLocationOn}>CÓMO LLEGAR</Button>
-      </main>
-    </section>
+      </MainLayout>
+    </SectionLayout>
   )
 }

@@ -1,25 +1,28 @@
 import { TitleSection } from '../TitleSection'
-import OutfitImage from '../../assets/img/baile.png'
+import OutfitImage from '../../assets/SVGs/outfit.svg'
+import { SectionLayout } from '../../layouts/SectionLayout'
+import { MainLayout } from '../../layouts/MainLayout'
+import { ImgTemplate } from '../generalComponents/ImgTemplate'
 
 export const Outfit = () => {
   return (
-    <section className='py-5'>
-      <main className='flex flex-col items-center justify-center gap-3' >
+    <SectionLayout>
+      <MainLayout>
         <TitleSection title='Vestuario' />
-        <img src={OutfitImage} alt='champan' loading='lazy' decoding='async'/>
+        <ImgTemplate src={OutfitImage} alt='outfit' />
         <div className='mt-2 space-y-2 text-center text-primary'>
-          <h1 className='text-5xl lobster '>Damas:</h1>
-          <h2 className='text-2xl font-semibold uppercase'>Vestido Largo</h2>
+          <h2 className='text-5xl '>Damas:</h2>
+          <p className='text-2xl font-semibold uppercase'>Vestido Largo</p>
           <div className='flex items-center gap-2'>
-            <p className='text-lg uppercase'>Se reserva el color blanco</p>
+            <p className='text-sm uppercase'>Se reserva el color blanco</p>
             <div className='w-4 h-4 bg-white border border-gray-700 rounded-full'/>
           </div>
         </div>
         <div className='mt-2 space-y-2 text-center text-primary'>
-          <h1 className='text-5xl lobster '>Caballeros:</h1>
-          <h2 className='text-2xl font-semibold uppercase'>Por definir</h2>
+          <h2 className='text-5xl '>Caballeros:</h2>
+          <p className='text-2xl font-semibold uppercase'>Por definir</p>
         </div>
-      </main>
-    </section>
+      </MainLayout>
+    </SectionLayout>
   )
 }

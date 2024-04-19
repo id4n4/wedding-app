@@ -1,21 +1,24 @@
 import { TitleSection } from '../TitleSection'
-import ChampanImage from '../../assets/img/copa-de-champan.png'
+import ChampanImage from '../../assets/SVGs/champan.svg'
 import { Button } from '@tremor/react'
 import { MdLocationOn } from 'react-icons/md'
+import { SectionLayout } from '../../layouts/SectionLayout'
+import { MainLayout } from '../../layouts/MainLayout'
+import { ImgTemplate } from '../generalComponents/ImgTemplate'
 
 export const Reception = () => {
   return (
-    <section className='py-5'>
-      <main className='flex flex-col items-center justify-center gap-3' >
+    <SectionLayout>
+      <MainLayout>
         <TitleSection title='Recepción' />
-        <img src={ChampanImage} alt='champan' loading='lazy' decoding='async'/>
-        <div className='text-xl text-center uppercase text-primary'>
-          <p>Iglesia la medalla milagrosa</p>
-          <p>Cereté - Córdoba</p>
-          <p>5:00 P.M.</p>
+        <ImgTemplate src={ChampanImage} alt='champan' />
+        <div className='text-lg text-center uppercase md:text-xl text-primary'>
+          <p>Hacienda el paraíso</p>
+          <p>San Carlos Córdoba</p>
+          <p>7:00 P.M.</p>
         </div>
         <Button icon={MdLocationOn}>CÓMO LLEGAR</Button>
-      </main>
-    </section>
+      </MainLayout>
+    </SectionLayout>
   )
 }
