@@ -8,8 +8,8 @@ export const SharePhoto = () => {
         <div className='bg-background'>
           <img src={waveUP} alt='waveUP' className='w-full' loading='lazy' decoding='async'/>
         </div>
-        <div className='absolute left-0 right-0 '>
-          <h1 className='text-4xl text-center lobster text-primary'>Comparte las fotos de la Boda</h1>
+        <div className='relative h-5 bg-darkBackground'>
+          <h2 className='text-2xl md:text-[4rem] text-center text-primary absolute bottom-full inset-0'>Comparte las fotos de la Boda</h2>
         </div>
         <img src={waveDOWN} alt='waveUP' className='w-full' loading='lazy' decoding='async'/>
       </div>

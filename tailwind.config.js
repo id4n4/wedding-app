@@ -16,7 +16,7 @@ export default {
     extend: {
       colors: {
         background: "#fffffe",
-        darkBackground: "#eaddcf",
+        darkBackground: "#e9e4d9",
         headline: "#020826",
         paragraph: "#716040",
         button: "#C9961A",
@@ -24,7 +24,7 @@ export default {
         stroke: "#020826",
         main: "#fffffe",
         primary: "#8C6239",
-        secondary: "#eaddcf",
+        secondary: "#e9e4d9",
         tertiary: "#f25042",
         // light mode
         tremor: {
