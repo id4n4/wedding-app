@@ -7,8 +7,11 @@ import { SectionLayout } from '../../layouts/SectionLayout'
 import { MainLayout } from '../../layouts/MainLayout'
 import { ImgTemplate } from '../generalComponents/ImgTemplate'
 import { ImgFlour } from '../generalComponents/ImgFlour'
+import { ModalTemplate } from '../generalComponents/ModalTemplate'
+import { useState } from 'react'
 
 export const Ceremony = () => {
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <SectionLayout >
 
@@ -22,8 +25,12 @@ export const Ceremony = () => {
           <p>Cereté - Córdoba</p>
           <p>5:00 P.M.</p>
         </div>
-        <Button icon={MdLocationOn}>CÓMO LLEGAR</Button>
+        <Button icon={MdLocationOn} onClick={() => { setIsOpen(true) }}>CÓMO LLEGAR</Button>
       </MainLayout>
+      <ModalTemplate
+        isOpen={isOpen}
+        hideModal={() => { setIsOpen(false) }}
+      />
     </SectionLayout>
   )
 }
