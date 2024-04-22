@@ -1,6 +1,7 @@
 import {
   Ceremony,
   Counter,
+  EnvelopeRain,
   Hero,
   Music,
   Outfit,
@@ -18,6 +19,7 @@ function App () {
       <Outfit />
       <SharePhoto />
       <Music />
+      <EnvelopeRain />
     </section>
   )
 }
