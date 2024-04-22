@@ -2,6 +2,7 @@ import {
   Ceremony,
   Counter,
   Hero,
+  Music,
   Outfit,
   Reception,
   SharePhoto
@@ -16,6 +17,7 @@ function App () {
       <Reception />
       <Outfit />
       <SharePhoto />
+      <Music />
     </section>
   )
 }

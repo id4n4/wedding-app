@@ -27,9 +27,9 @@ export const SharePhoto = () => {
         </div>
         <div className='flex flex-col items-center justify-center'>
           <FaInstagram className='text-9xl text-main'/>
-          <p>#ApellidosDeLosNovios</p>
+          <p className='text-main'>#ApellidosDeLosNovios</p>
         </div>
-        <Button>
+        <Button className='uppercase'>
           Ver fotos en Instagram
         </Button>
       </MainLayout>
