@@ -1,9 +1,12 @@
+import { FaInstagram } from 'react-icons/fa'
 import waveDOWN from '../../assets/waveDown.svg'
 import waveUP from '../../assets/waveUp.svg'
+import { MainLayout } from '../../layouts/MainLayout'
+import { Button } from '@tremor/react'
 
 export const SharePhoto = () => {
   return (
-    <section className='font-sans min-h-[700px] w-full bg-primary h-full flex flex-col '>
+    <section className='flex flex-col w-full h-full pb-10 font-sans bg-primary'>
       <div className='relative'>
         <div className='bg-background'>
           <img src={waveUP} alt='waveUP' className='w-full' loading='lazy' decoding='async'/>
@@ -13,15 +16,23 @@ export const SharePhoto = () => {
         </div>
         <img src={waveDOWN} alt='waveUP' className='w-full' loading='lazy' decoding='async'/>
       </div>
-      <div className='flex items-center justify-center flex-grow'>
-        <div className='max-w-[1000px] text-main flex flex-col justify-center items-center gap-5 '>
-          <div className='max-w-[800px] mx-auto'>
-            <p className='text-xl text-center uppercase text-balance'>
-          Uno solo puede ser vencido, pero dos pueden resistir; !la cuerda de tres hilos no se rompe fácilmente!
-            </p>
-          </div>
+      <MainLayout>
+        <div>
+          <p className='text-xl text-center uppercase text-balance text-main'>
+            Un minuto, un segundo.
+          </p>
+          <p className='text-xl text-center uppercase text-balance text-main'>
+            Un instante que queda en la eternidad.
+          </p>
         </div>
-      </div>
+        <div className='flex flex-col items-center justify-center'>
+          <FaInstagram className='text-9xl text-main'/>
+          <p>#ApellidosDeLosNovios</p>
+        </div>
+        <Button>
+          Ver fotos en Instagram
+        </Button>
+      </MainLayout>
     </section>
   )
 }
