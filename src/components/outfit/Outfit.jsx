@@ -13,14 +13,12 @@ export const Outfit = () => {
         <div className='mt-2 space-y-2 text-center text-primary'>
           <h2 className='text-5xl '>Damas:</h2>
           <p className='text-2xl font-semibold uppercase'>Vestido Largo</p>
-          <div className='flex items-center gap-2'>
-            <p className='text-sm uppercase'>Se reserva el color blanco</p>
-            <div className='w-4 h-4 bg-white border border-gray-700 rounded-full'/>
-          </div>
+          <p className='text-sm uppercase'>Se reserva el color blanco</p>
         </div>
         <div className='mt-2 space-y-2 text-center text-primary'>
           <h2 className='text-5xl '>Caballeros:</h2>
-          <p className='text-2xl font-semibold uppercase'>Por definir</p>
+          <p className='text-2xl font-semibold uppercase'>Conjunto guayabera</p>
+          <p className='text-sm uppercase'>Se reserva el color blanco</p>
         </div>
       </MainLayout>
     </SectionLayout>
