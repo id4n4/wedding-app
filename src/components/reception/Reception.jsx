@@ -5,10 +5,12 @@ import { MdLocationOn } from 'react-icons/md'
 import { SectionLayout } from '../../layouts/SectionLayout'
 import { MainLayout } from '../../layouts/MainLayout'
 import { ImgTemplate } from '../generalComponents/ImgTemplate'
+import { ImgFlour } from '../generalComponents/ImgFlour'
 
 export const Reception = () => {
   return (
     <SectionLayout>
+      <ImgFlour isLeft={false} />
       <MainLayout id='reception'>
         <TitleSection title='Recepción' />
         <ImgTemplate src={ChampanImage} alt='champan' />

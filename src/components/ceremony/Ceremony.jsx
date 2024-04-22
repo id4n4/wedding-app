@@ -6,11 +6,14 @@ import ChurchImage from '../../assets/SVGs/church.svg'
 import { SectionLayout } from '../../layouts/SectionLayout'
 import { MainLayout } from '../../layouts/MainLayout'
 import { ImgTemplate } from '../generalComponents/ImgTemplate'
+import { ImgFlour } from '../generalComponents/ImgFlour'
 
 export const Ceremony = () => {
   return (
     <SectionLayout >
+
       <WaveLines />
+      <ImgFlour isLeft />
       <MainLayout id='ceremony'>
         <TitleSection title='Ceremonia' />
         <ImgTemplate src={ChurchImage} alt='Iglesia' />

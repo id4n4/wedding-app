@@ -5,10 +5,12 @@ import { TitleSection } from '../TitleSection'
 import { FaUserCheck } from 'react-icons/fa'
 import pencilImage from '../../assets/SVGs/pencil.svg'
 import { ImgTemplate } from '../generalComponents/ImgTemplate'
+import { ImgFlour } from '../generalComponents/ImgFlour'
 
 export const ConfirmAssistance = () => {
   return (
     <SectionLayout>
+      <ImgFlour isLeft={false} />
       <MainLayout id='confirmAssistance'>
         <TitleSection title='Confirmar Asistencia' />
         <ImgTemplate src={pencilImage} alt='Lápiz' />

@@ -6,12 +6,14 @@ import { TitleSection } from '../TitleSection'
 import MusicImage from '../../assets/SVGs/music.svg'
 import { ImgTemplate } from '../generalComponents/ImgTemplate'
 import { FaSpotify } from 'react-icons/fa'
+import { ImgFlour } from '../generalComponents/ImgFlour'
 
 export const Music = () => {
   return (
     <>
       <WaveLines />
       <SectionLayout>
+        <ImgFlour isLeft={false} />
         <MainLayout>
           <div className='text-center text-primary'>
             <h1>Hagamos juntos una fiesta épica.</h1>

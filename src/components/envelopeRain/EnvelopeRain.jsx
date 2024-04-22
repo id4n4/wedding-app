@@ -3,10 +3,12 @@ import { TitleSection } from '../TitleSection'
 import CardImage from '../../assets/SVGs/card.svg'
 import { ImgTemplate } from '../generalComponents/ImgTemplate'
 import { MainLayout } from '../../layouts/MainLayout'
+import { ImgFlour } from '../generalComponents/ImgFlour'
 
 export const EnvelopeRain = () => {
   return (
     <SectionLayout>
+      <ImgFlour isLeft />
       <MainLayout>
         <TitleSection title='Lluvia de Sobres' />
         <ImgTemplate src={CardImage} alt='Tarjeta' />

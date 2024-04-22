@@ -3,10 +3,12 @@ import OutfitImage from '../../assets/SVGs/outfit.svg'
 import { SectionLayout } from '../../layouts/SectionLayout'
 import { MainLayout } from '../../layouts/MainLayout'
 import { ImgTemplate } from '../generalComponents/ImgTemplate'
+import { ImgFlour } from '../generalComponents/ImgFlour'
 
 export const Outfit = () => {
   return (
     <SectionLayout>
+      <ImgFlour isLeft />
       <MainLayout>
         <TitleSection title='Vestuario' />
         <ImgTemplate src={OutfitImage} alt='outfit' />
