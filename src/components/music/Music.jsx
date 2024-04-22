@@ -18,15 +18,17 @@ export const Music = () => {
             <h1>Aquí algunos detalles a tener en cuenta.</h1>
           </div>
           <Divider />
-          <TitleSection title='Música' />
-          <ImgTemplate src={MusicImage} alt='Música' />
-          <div className='w-1/2 space-y-5 text-xl text-center text-primary'>
-            <p>¡Ayúdanos para que nuestra boda sea inolvidable</p>
-            <p>Agrega la música que deseas escuchar dando clic en playlist Spotify</p>
-          </div>
-          <Button icon={FaSpotify} className='uppercase'>
+          <div id='music' className='flex flex-col items-center gap-5'>
+            <TitleSection title='Música' />
+            <ImgTemplate src={MusicImage} alt='Música' />
+            <div className='w-1/2 space-y-5 text-xl text-center text-primary'>
+              <p>¡Ayúdanos para que nuestra boda sea inolvidable</p>
+              <p>Agrega la música que deseas escuchar dando clic en playlist Spotify</p>
+            </div>
+            <Button icon={FaSpotify} className='uppercase'>
             Playlist Spotify
-          </Button>
+            </Button>
+          </div>
         </MainLayout>
       </SectionLayout>
     </>

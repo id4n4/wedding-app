@@ -9,7 +9,7 @@ import { ImgTemplate } from '../generalComponents/ImgTemplate'
 export const ConfirmAssistance = () => {
   return (
     <SectionLayout>
-      <MainLayout>
+      <MainLayout id='confirmAssistance'>
         <TitleSection title='Confirmar Asistencia' />
         <ImgTemplate src={pencilImage} alt='Lápiz' />
         <div className='text-xl text-center text-primary'>

@@ -9,7 +9,7 @@ import { ImgTemplate } from '../generalComponents/ImgTemplate'
 export const Reception = () => {
   return (
     <SectionLayout>
-      <MainLayout>
+      <MainLayout id='reception'>
         <TitleSection title='Recepción' />
         <ImgTemplate src={ChampanImage} alt='champan' />
         <div className='text-lg text-center uppercase md:text-xl text-primary'>

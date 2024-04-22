@@ -34,7 +34,7 @@ export const Counter = () => {
       <div className='relative z-0'>
         <img src={waveDOWN} alt='waveUP' className='w-full' loading='lazy' decoding='async'/>
       </div>
-      <div className='absolute left-0 right-0 z-50 flex justify-center -top-7'>
+      <div id='counter' className='absolute left-0 right-0 z-50 flex justify-center -top-7'>
 
         <div className='flex flex-col items-center justify-center space-y-4 text-4xl rounded-full shadow-2xl text-paragraph w-[19rem] h-[19rem] bg-background ring-1 ring-primary z-10'>
           <h1 className='tracking-widest uppercase'>Faltan</h1>

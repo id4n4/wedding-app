@@ -1,3 +1,4 @@
+import { Divider } from '@tremor/react'
 import {
   Ceremony,
   ConfirmAssistance,
@@ -26,6 +27,7 @@ function App () {
       <EnvelopeRain />
       <ConfirmAssistance />
       <Suggestions />
+      <Divider />
       <Menu />
       <Footer />
     </section>

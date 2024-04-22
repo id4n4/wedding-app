@@ -9,9 +9,9 @@ import { ImgTemplate } from '../generalComponents/ImgTemplate'
 
 export const Ceremony = () => {
   return (
-    <SectionLayout>
+    <SectionLayout >
       <WaveLines />
-      <MainLayout >
+      <MainLayout id='ceremony'>
         <TitleSection title='Ceremonia' />
         <ImgTemplate src={ChurchImage} alt='Iglesia' />
         <div className='text-lg text-center uppercase md:text-xl text-primary'>

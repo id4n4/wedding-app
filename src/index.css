@@ -12,12 +12,17 @@
   src: url("./assets/fonts/trajanPro.ttf");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h2 {
   font-family: 'joseph';
   font-size: 2rem;
 }
 
-p {
+p,
+a {
   font-family: 'trajan';
 }
 

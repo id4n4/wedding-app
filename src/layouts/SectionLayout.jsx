@@ -1,6 +1,6 @@
-export const SectionLayout = ({ children }) => {
+export const SectionLayout = ({ children, ...props }) => {
   return (
-    <section className='py-10'>
+    <section className='py-10' {...props}>
       {children}
     </section>
   )
