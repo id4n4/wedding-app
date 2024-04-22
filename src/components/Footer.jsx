@@ -34,7 +34,7 @@ export const Footer = () => {
             >
               <div className='flex items-center gap-2 transition-all select-none hover:scale-105 hover:text-headline'>
                 <FaLinkedin className='text-lg' />
-                <h3 className='font-sans'>Juan David Sanchez Hoyos</h3>
+                <h3 className='font-sans'>Juan Sanchez</h3>
               </div>
             </a>
             <a

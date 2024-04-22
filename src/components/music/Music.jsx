@@ -21,7 +21,7 @@ export const Music = () => {
           <div id='music' className='flex flex-col items-center gap-5'>
             <TitleSection title='Música' />
             <ImgTemplate src={MusicImage} alt='Música' />
-            <div className='w-1/2 space-y-5 text-xl text-center text-primary'>
+            <div className='space-y-5 text-xl text-center md:w-1/2 text-primary'>
               <p>¡Ayúdanos para que nuestra boda sea inolvidable</p>
               <p>Agrega la música que deseas escuchar dando clic en playlist Spotify</p>
             </div>

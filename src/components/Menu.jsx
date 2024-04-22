@@ -16,9 +16,9 @@ export const Menu = () => {
             src={ivanAlejaImage}
             alt='Iván y Aleja'
             decoding='async'
-            className='w-[20rem] h-[20rem]'
+            className='w-1/2 '
           />
-          <div className='flex flex-col gap-2 text-end text-primary'>
+          <div className='flex flex-col gap-5 md:gap-2 text-end text-primary'>
             <a
               href='#counter'
               onClick={(e) => handleClick(e, 'counter')}
