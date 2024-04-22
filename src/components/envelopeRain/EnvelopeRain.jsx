@@ -8,7 +8,7 @@ export const EnvelopeRain = () => {
   return (
     <SectionLayout>
       <MainLayout>
-        <TitleSection title='Lluvia de sobres' />
+        <TitleSection title='Lluvia de Sobres' />
         <ImgTemplate src={CardImage} alt='Tarjeta' />
         <div className='text-xl text-center text-primary'>
           <p>Queremos que sepas que nuestro principal regalo </p>

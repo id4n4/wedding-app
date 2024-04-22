@@ -1,12 +1,16 @@
 import {
   Ceremony,
+  ConfirmAssistance,
   Counter,
   EnvelopeRain,
+  Footer,
   Hero,
+  Menu,
   Music,
   Outfit,
   Reception,
-  SharePhoto
+  SharePhoto,
+  Suggestions
 } from './components'
 
 function App () {
@@ -20,6 +24,10 @@ function App () {
       <SharePhoto />
       <Music />
       <EnvelopeRain />
+      <ConfirmAssistance />
+      <Suggestions />
+      <Menu />
+      <Footer />
     </section>
   )
 }
