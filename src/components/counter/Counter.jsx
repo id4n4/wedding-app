@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import waveDOWN from '../../assets/waveDown.svg'
 import '../../styles/counter_style.css'
 import points from '../../assets/SVGs/groupPoints.svg'
+import { WaveDown } from '../generalComponents/WaveDown'
 
 export const Counter = () => {
   const calculateTimeLeft = () => {
@@ -31,8 +31,8 @@ export const Counter = () => {
   })
   return (
     <section className='relative h-[300px]'>
-      <div className='relative z-0'>
-        <img src={waveDOWN} alt='waveUP' className='w-full' loading='lazy' decoding='async'/>
+      <div className='relative z-0 rotate-180'>
+        <WaveDown />
       </div>
       <div id='counter' className='absolute left-0 right-0 z-50 flex justify-center -top-7'>
 

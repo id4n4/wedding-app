@@ -1,11 +1,5 @@
-/* animación cambio de escala 0.5 a 1.5 infinito */
-
-
-
-
-
 .ring_counter {
-  animation: glowing 15s linear infinite;
+  animation: glowing 5s linear infinite;
 }
 
 @keyframes glowing {

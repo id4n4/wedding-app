@@ -1,6 +1,6 @@
 import { Title } from './components/Title'
 import { Week } from './components/Week'
-import waveUP from '../../assets/waveUp.svg'
+import { WaveUp } from '../generalComponents/WaveUp'
 
 export const Hero = () => {
   return (
@@ -17,7 +17,7 @@ export const Hero = () => {
         </div>
       </div>
       <div>
-        <img src={waveUP} alt='waveUP' className='w-full' loading='lazy' decoding='async'/>
+        <WaveUp />
       </div>
     </section>
   )
