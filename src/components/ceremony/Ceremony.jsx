@@ -30,6 +30,8 @@ export const Ceremony = () => {
       <ModalTemplate
         isOpen={isOpen}
         hideModal={() => { setIsOpen(false) }}
+        title='Cómo llegar a la'
+        subtitle='Ceremonia'
       />
     </SectionLayout>
   )

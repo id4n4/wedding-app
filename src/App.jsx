@@ -16,7 +16,7 @@ import {
 
 function App () {
   return (
-    <section className='w-full h-full bg-background min-w-[450px] overflow-hidden'>
+    <section className='w-full h-full bg-background min-w-[450px] overflow-auto '>
       <Hero />
       <Counter />
       <Ceremony />
