@@ -14,11 +14,8 @@ export const ConfirmAssistance = () => {
       <MainLayout id='confirmAssistance'>
         <TitleSection title='Confirmar Asistencia' />
         <ImgTemplate src={pencilImage} alt='Lápiz' />
-        <div className='text-xl text-center text-primary'>
-          <p>Para nosotros es muy importante</p>
-          <p>que confirmes tu asistencia a</p>
-          <p>nuestra boda antes del XX de</p>
-          <p>XXXXX de 2024</p>
+        <div className='mx-auto text-xl text-center text-primary md:w-1/2'>
+          <p>Para nosotros es muy importante que confirmes tu asistencia a nuestra boda antes del 15 de Julio de 2024</p>
         </div>
         <Button icon={FaUserCheck} className='uppercase'>
           Confirmar Asistencia

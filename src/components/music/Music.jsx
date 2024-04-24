@@ -16,8 +16,8 @@ export const Music = () => {
         <ImgFlour isLeft={false} />
         <MainLayout>
           <div className='text-center text-primary'>
-            <h1>Hagamos juntos una fiesta épica.</h1>
-            <h1>Aquí algunos detalles a tener en cuenta.</h1>
+            <h1 className='text-xl md:text-4xl'>Hagamos juntos una fiesta épica.</h1>
+            <h1 className='text-xl md:text-4xl'>Aquí algunos detalles a tener en cuenta.</h1>
           </div>
           <div id='music' className='flex flex-col items-center gap-5'>
             <TitleSection title='Música' />
