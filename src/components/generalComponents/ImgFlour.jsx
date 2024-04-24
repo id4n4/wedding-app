@@ -2,12 +2,12 @@ import flourImage from '../../assets/img/flores.png'
 
 export const ImgFlour = ({ isLeft }) => {
   return (
-    <div className={`absolute ${isLeft ? '-left-7' : '-right-7'} z-0`}>
+    <div className={`absolute ${isLeft ? 'left-0' : 'right-0'} z-0 overflow-hidden`}>
       <img
         src={flourImage}
         alt='flor'
         decoding='async'
-        className={`${isLeft ? '-scale-x-100 rotate-12' : '-rotate-12'} w-[60vw] md:w-[40vw] opacity-10  `}
+        className={`${isLeft ? '-scale-x-100 rotate-12 -translate-x-7' : '-rotate-12 translate-x-7'} w-[60vw] md:w-[40vw] opacity-10 `}
       />
     </div>
   )

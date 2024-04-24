@@ -1,4 +1,4 @@
-import { Button, Divider } from '@tremor/react'
+import { Button } from '@tremor/react'
 import { MainLayout } from '../../layouts/MainLayout'
 import { SectionLayout } from '../../layouts/SectionLayout'
 import { WaveLines } from '../ceremony/components/WaveLines'
@@ -19,7 +19,6 @@ export const Music = () => {
             <h1>Hagamos juntos una fiesta épica.</h1>
             <h1>Aquí algunos detalles a tener en cuenta.</h1>
           </div>
-          <Divider />
           <div id='music' className='flex flex-col items-center gap-5'>
             <TitleSection title='Música' />
             <ImgTemplate src={MusicImage} alt='Música' />

@@ -14,7 +14,6 @@ export const Ceremony = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <SectionLayout >
-
       <WaveLines />
       <ImgFlour isLeft />
       <MainLayout id='ceremony'>

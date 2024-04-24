@@ -6,6 +6,7 @@ import {
   EnvelopeRain,
   Footer,
   Hero,
+  Letter,
   Menu,
   Music,
   Outfit,
@@ -16,7 +17,8 @@ import {
 
 function App () {
   return (
-    <section className='w-full h-full bg-background min-w-[450px] overflow-auto '>
+    <section className='w-full h-full overflow-x-hidden overflow-y-auto bg-background '>
+      <Letter />
       <Hero />
       <Counter />
       <Ceremony />
