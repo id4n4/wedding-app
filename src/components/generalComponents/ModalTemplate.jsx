@@ -42,13 +42,9 @@ export const ModalTemplate = ({
               <img src={heart} alt='heart' className='w-10' />
             </div>
           </div>
-          <p className='mt-2 leading-6 text-tremor-default text-tremor-content dark:text-dark-tremor-content'>
-            Your account has been created successfully. You can now login to
-            your account. For more information, please contact us.
-          </p>
-          <Button className='w-full mt-8' onClick={hideModal}>
-            Got it!
-          </Button>
+          <div className='w-full mt-4'>
+            {children}
+          </div>
         </div>
       </DialogPanel>
     </Dialog>
