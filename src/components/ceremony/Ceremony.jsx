@@ -11,26 +11,14 @@ import { ModalTemplate } from '../generalComponents/ModalTemplate'
 import { useState } from 'react'
 import { MapComponent } from '../generalComponents/Map'
 import { MAP_CHURCH } from '../../constants/locations'
-import toast, { Toaster } from 'react-hot-toast'
+import { Toaster } from 'react-hot-toast'
 import { TbRoute } from 'react-icons/tb'
+import { startRoute } from '../../functions/map_functions'
 
 export const Ceremony = () => {
   const [isOpen, setIsOpen] = useState(false)
-
-  const startRoute = () => {
-    // obtener ubicación actual
-    navigator.geolocation.getCurrentPosition(({ coords }) => {
-      const origin = `${coords.latitude},${coords.longitude}`
-      const destination = `${MAP_CHURCH.location.lat},${MAP_CHURCH.location.lng}`
-      const url = `https://www.google.com/maps/dir/?api=1&origin=${origin}&destination=${destination}`
-      window.open(url, '_blank')
-    }, e => {
-      console.error(e)
-      toast.error('Debes permitir el acceso a tu ubicación para iniciar la ruta')
-    })
-  }
   return (
-    <SectionLayout >
+    <SectionLayout>
       <Toaster />
       <WaveLines />
       <ImgFlour isLeft />
@@ -42,11 +30,20 @@ export const Ceremony = () => {
           <p>Cereté - Córdoba</p>
           <p>5:00 P.M.</p>
         </div>
-        <Button icon={MdLocationOn} onClick={() => { setIsOpen(true) }}>CÓMO LLEGAR</Button>
+        <Button
+          icon={MdLocationOn}
+          onClick={() => {
+            setIsOpen(true)
+          }}
+        >
+          CÓMO LLEGAR
+        </Button>
       </MainLayout>
       <ModalTemplate
         isOpen={isOpen}
-        hideModal={() => { setIsOpen(false) }}
+        hideModal={() => {
+          setIsOpen(false)
+        }}
         title='Cómo llegar a la'
         subtitle='Ceremonia'
       >
@@ -55,7 +52,14 @@ export const Ceremony = () => {
             center={MAP_CHURCH.location}
             options={MAP_CHURCH.options}
           />
-          <Button icon={TbRoute} onClick={startRoute} >Iniciar Ruta</Button>
+          <Button
+            icon={TbRoute}
+            onClick={() => {
+              startRoute(MAP_CHURCH.location)
+            }}
+          >
+            Iniciar Ruta
+          </Button>
         </div>
       </ModalTemplate>
     </SectionLayout>

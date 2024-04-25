@@ -8,7 +8,6 @@ const containerStyle = {
 const API_KEY_MAPS = import.meta.env.VITE_API_KEY_MAP
 
 export function MapComponent ({ center, options }) {
-  console.log(API_KEY_MAPS)
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: API_KEY_MAPS
