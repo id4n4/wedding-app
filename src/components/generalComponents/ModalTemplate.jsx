@@ -13,7 +13,7 @@ export const ModalTemplate = ({
   return (
     <Dialog open={isOpen} onClose={hideModal} static={true}>
       <DialogPanel className='relative border-none bg-darkBackground max-w-max rounded-3xl'>
-        <div className='absolute inset-0 z-0 flex justify-between overflow-hidden -top-10'>
+        <div className='absolute left-0 right-0 z-0 flex justify-between overflow-hidden -top-10'>
           <img
             src={flourImage}
             alt='Flour'

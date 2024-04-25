@@ -36,7 +36,7 @@ export const Reception = () => {
           setIsOpen(false)
         }}
         title='Cómo llegar a la'
-        subtitle='Ceremonia'
+        subtitle='Recepción'
       >
         <div className='w-[80vw] flex flex-col items-center gap-2'>
           <MapComponent
