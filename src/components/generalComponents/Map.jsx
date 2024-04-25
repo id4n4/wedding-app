@@ -7,7 +7,7 @@ const containerStyle = {
 }
 const API_KEY_MAPS = import.meta.env.VITE_API_KEY_MAP
 
-export function MapComponent ({ center, options }) {
+export function MapComponent ({ center, options, zoom = 18 }) {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: API_KEY_MAPS
@@ -17,7 +17,7 @@ export function MapComponent ({ center, options }) {
     ? (<GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
-      zoom={18}
+      zoom={zoom}
       options={{
         styles: options
       }}

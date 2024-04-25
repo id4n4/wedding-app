@@ -6,8 +6,15 @@ import { SectionLayout } from '../../layouts/SectionLayout'
 import { MainLayout } from '../../layouts/MainLayout'
 import { ImgTemplate } from '../generalComponents/ImgTemplate'
 import { ImgFlour } from '../generalComponents/ImgFlour'
+import { useState } from 'react'
+import { ModalTemplate } from '../generalComponents/ModalTemplate'
+import { MapComponent } from '../generalComponents/Map'
+import { MAP_HACIENDA } from '../../constants/locations'
+import { TbRoute } from 'react-icons/tb'
+import { startRoute } from '../../functions/map_functions'
 
 export const Reception = () => {
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <SectionLayout>
       <ImgFlour isLeft={false} />
@@ -19,8 +26,34 @@ export const Reception = () => {
           <p>San Carlos Córdoba</p>
           <p>7:00 P.M.</p>
         </div>
-        <Button icon={MdLocationOn}>CÓMO LLEGAR</Button>
+        <Button onClick={() => {
+          setIsOpen(true)
+        }} icon={MdLocationOn}>CÓMO LLEGAR</Button>
       </MainLayout>
+      <ModalTemplate
+        isOpen={isOpen}
+        hideModal={() => {
+          setIsOpen(false)
+        }}
+        title='Cómo llegar a la'
+        subtitle='Ceremonia'
+      >
+        <div className='w-[80vw] flex flex-col items-center gap-2'>
+          <MapComponent
+            center={MAP_HACIENDA.location}
+            options={MAP_HACIENDA.options}
+            zoom={13}
+          />
+          <Button
+            icon={TbRoute}
+            onClick={() => {
+              startRoute(MAP_HACIENDA.location)
+            }}
+          >
+            Iniciar Ruta
+          </Button>
+        </div>
+      </ModalTemplate>
     </SectionLayout>
   )
 }
