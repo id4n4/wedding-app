@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import '../styles/letter_style.css'
 import { AnimatePresence, motion } from 'framer-motion'
 import { HiHeart } from 'react-icons/hi'
@@ -6,6 +6,20 @@ import { ImgFlour } from './generalComponents/ImgFlour'
 
 export const Letter = () => {
   const [isVisible, setIsVisible] = useState(true)
+  useEffect(() => {
+    // solo mostrar si la fecha de localStorage no existe o es diferente a la actual
+    // si no existe se guarda la fecha del dia de mañana para después comparar
+    const date = new Date()
+    const tomorrow = new Date()
+    tomorrow.setDate(date.getDate() + 1)
+    const today = date.toDateString()
+    const limitDate = localStorage.getItem('limitDate')
+    if (!limitDate || limitDate === today) {
+      localStorage.setItem('limitDate', tomorrow.toDateString())
+    } else {
+      setIsVisible(false)
+    }
+  }, [])
   return (
     <AnimatePresence>
       {
