@@ -19,8 +19,7 @@ export const Outfit = () => {
         </div>
         <div className='mt-2 space-y-2 text-center text-primary'>
           <h2 className='text-5xl '>Caballeros:</h2>
-          <p className='text-2xl font-semibold uppercase'>Conjunto guayabera</p>
-          <p className='text-sm uppercase'>Se reserva el color blanco</p>
+          <p className='text-2xl font-semibold uppercase'>Conjunto guayabera blanca</p>
         </div>
       </MainLayout>
     </SectionLayout>
