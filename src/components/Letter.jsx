@@ -6,7 +6,8 @@ import { ImgFlour } from './generalComponents/ImgFlour'
 
 export const Letter = () => {
   const [isVisible, setIsVisible] = useState(true)
-  useEffect(() => {
+
+  const onShowLetter = () => {
     // solo mostrar si la fecha de localStorage no existe o es diferente a la actual
     // si no existe se guarda la fecha del dia de mañana para después comparar
     const date = new Date()
@@ -14,11 +15,19 @@ export const Letter = () => {
     tomorrow.setDate(date.getDate() + 1)
     const today = date.toDateString()
     const limitDate = localStorage.getItem('limitDate')
+
     if (!limitDate || limitDate === today) {
+      console.log('🚀 ~ onShowLetter ~ today:', today)
+      console.log('🚀 ~ onShowLetter ~ limitDate:', limitDate)
+      console.log('🚀 ~ onShowLetter ~ tomorrow:', tomorrow.toDateString())
       localStorage.setItem('limitDate', tomorrow.toDateString())
+      setIsVisible(true)
     } else {
       setIsVisible(false)
     }
+  }
+  useEffect(() => {
+    onShowLetter()
   }, [])
   return (
     <AnimatePresence>
