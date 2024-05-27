@@ -3,8 +3,12 @@ import { MainLayout } from '../../layouts/MainLayout'
 import { Button } from '@tremor/react'
 import { WaveDown } from '../generalComponents/WaveDown'
 import { WaveUp } from '../generalComponents/WaveUp'
+const linkHashtag = 'https://www.instagram.com/explore/tags/IvAle_wed/'
 
 export const SharePhoto = () => {
+  const openInstagram = () => {
+    window.open(linkHashtag, '_blank')
+  }
   return (
     <section className='flex flex-col w-full h-full pb-10 font-sans bg-primary'>
       <div>
@@ -29,9 +33,9 @@ export const SharePhoto = () => {
         </div>
         <div className='flex flex-col items-center justify-center'>
           <FaInstagram className='text-9xl text-main'/>
-          <p className='text-main'>#ApellidosDeLosNovios</p>
+          <h4 className='text-main'>#IvAle_wed</h4>
         </div>
-        <Button className='uppercase'>
+        <Button className='uppercase' onClick={openInstagram} >
           Ver fotos en Instagram
         </Button>
       </MainLayout>

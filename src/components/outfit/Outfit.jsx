@@ -1,13 +1,14 @@
-import { TitleSection } from '../TitleSection'
+import { Button } from '@tremor/react'
+import { useState } from 'react'
+import { AiOutlineBgColors } from 'react-icons/ai'
 import OutfitImage from '../../assets/SVGs/outfit.svg'
-import { SectionLayout } from '../../layouts/SectionLayout'
 import { MainLayout } from '../../layouts/MainLayout'
-import { ImgTemplate } from '../generalComponents/ImgTemplate'
+import { SectionLayout } from '../../layouts/SectionLayout'
+import { TitleSection } from '../TitleSection'
 import { ImgFlour } from '../generalComponents/ImgFlour'
-import { outfitColors } from '../../constants/outfitColors'
+import { ImgTemplate } from '../generalComponents/ImgTemplate'
 import { ModalTemplate } from '../generalComponents/ModalTemplate'
 import { ColorPalette } from './components/ColorPalette'
-import { useState } from 'react'
 
 export const Outfit = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -21,20 +22,7 @@ export const Outfit = () => {
           <h2 className='text-5xl '>Damas:</h2>
           <p className='text-2xl font-semibold uppercase'>Vestido Largo</p>
           <p className='text-2xl font-semibold'>Reservado color blanco</p>
-          <div className='relative grid h-6 grid-cols-5 overflow-hidden transition-transform duration-300 rounded-md cursor-pointer hover:scale-95'
-            onClick={() => {
-              setIsOpen(true)
-            }}
-          >
-            <div style={{ background: outfitColors[0].color }} />
-            <div style={{ background: outfitColors[1].color }} />
-            <div style={{ background: outfitColors[2].color }} />
-            <div style={{ background: outfitColors[3].color }} />
-            <div style={{ background: outfitColors[4].color }} />
-            <div className='absolute inset-0 text-white transition-all opacity-0 bg-primary/50 hover:opacity-100'>
-              <p className='font-sans'>Paleta de colores</p>
-            </div>
-          </div>
+          <Button icon={AiOutlineBgColors} onClick={() => setIsOpen(true)} className='uppercase'>Paleta de Colores</Button>
           <ModalTemplate
             hideModal={() => { setIsOpen(false) }}
             isOpen={isOpen}
