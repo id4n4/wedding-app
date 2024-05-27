@@ -20,6 +20,7 @@ export const Outfit = () => {
         <div className='mt-2 space-y-2 text-center text-primary'>
           <h2 className='text-5xl '>Damas:</h2>
           <p className='text-2xl font-semibold uppercase'>Vestido Largo</p>
+          <p className='text-2xl font-semibold'>Reservado color blanco</p>
           <div className='relative grid h-6 grid-cols-5 overflow-hidden transition-transform duration-300 rounded-md cursor-pointer hover:scale-95'
             onClick={() => {
               setIsOpen(true)
@@ -30,7 +31,7 @@ export const Outfit = () => {
             <div style={{ background: outfitColors[2].color }} />
             <div style={{ background: outfitColors[3].color }} />
             <div style={{ background: outfitColors[4].color }} />
-            <div className='absolute inset-0 text-white transition-all opacity-0 bg-black/30 hover:opacity-100'>
+            <div className='absolute inset-0 text-white transition-all opacity-0 bg-primary/50 hover:opacity-100'>
               <p className='font-sans'>Paleta de colores</p>
             </div>
           </div>

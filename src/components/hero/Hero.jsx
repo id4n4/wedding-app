@@ -1,8 +1,8 @@
-import { Title } from './components/Title'
-import { Week } from './components/Week'
-import { WaveUp } from '../generalComponents/WaveUp'
 import { motion } from 'framer-motion'
 import { ImQuotesLeft, ImQuotesRight } from 'react-icons/im'
+import { WaveUp } from '../generalComponents/WaveUp'
+import { Title } from './components/Title'
+import { Week } from './components/Week'
 
 export const Hero = () => {
   return (
