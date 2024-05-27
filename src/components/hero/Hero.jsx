@@ -24,7 +24,7 @@ export const Hero = () => {
                 Uno solo puede ser vencido, pero dos pueden resistir.
             </p>
             <p className='font-sans text-lg text-center sm:inline'>
-                !la cuerda de tres hilos no se rompe fácilmente!
+                !La cuerda de tres hilos no se rompe fácilmente!
             </p>
             <ImQuotesRight className='mt-2 text-xl text-secondary' />
           </div>

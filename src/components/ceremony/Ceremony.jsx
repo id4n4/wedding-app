@@ -26,8 +26,8 @@ export const Ceremony = () => {
         <TitleSection title='Ceremonia' />
         <ImgTemplate src={ChurchImage} alt='Iglesia' />
         <div className='text-lg text-center uppercase md:text-xl text-primary'>
-          <p>Iglesia la medalla milagrosa</p>
-          <p>Cereté - Córdoba</p>
+          <p>Parroquia San Carlos Borromeo</p>
+          <p>San Carlos - Córdoba</p>
           <p>5:00 P.M.</p>
         </div>
         <Button
