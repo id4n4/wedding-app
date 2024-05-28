@@ -3,11 +3,12 @@ import { ImQuotesLeft, ImQuotesRight } from 'react-icons/im'
 import { WaveUp } from '../generalComponents/WaveUp'
 import { Title } from './components/Title'
 import { Week } from './components/Week'
+import './heroStyle.css'
 
 export const Hero = () => {
   return (
-    <motion.section className='font-sans min-h-[700px] w-full bg-primary h-full flex flex-col'>
-      <div className='flex items-center justify-center flex-grow'>
+    <motion.section className='font-sans min-h-[700px] w-full bg-black h-full flex flex-col hero relative '>
+      <div className='z-10 flex items-center justify-center flex-grow'>
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
