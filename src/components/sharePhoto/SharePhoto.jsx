@@ -33,7 +33,7 @@ export const SharePhoto = () => {
         </div>
         <div className='flex flex-col items-center justify-center'>
           <FaInstagram className='text-9xl text-main'/>
-          <h4 className='text-main'>#IvAle_wed</h4>
+          <h4 className='text-2xl font-medium text-main'>#IvAle_wed</h4>
         </div>
         <Button className='uppercase' onClick={openInstagram} >
           Ver fotos en Instagram

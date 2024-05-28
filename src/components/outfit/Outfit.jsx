@@ -21,7 +21,7 @@ export const Outfit = () => {
         <div className='mt-2 space-y-2 text-center text-primary'>
           <h2 className='text-5xl '>Damas:</h2>
           <p className='text-2xl font-semibold uppercase'>Vestido Largo</p>
-          <p className='text-2xl font-semibold'>Reservado color blanco</p>
+          <p className='text-2xl font-semibold'>Se reserva el color blanco</p>
           <Button icon={AiOutlineBgColors} onClick={() => setIsOpen(true)} className='uppercase'>Paleta de Colores</Button>
           <ModalTemplate
             hideModal={() => { setIsOpen(false) }}

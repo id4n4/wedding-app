@@ -21,11 +21,11 @@ export const Hero = () => {
           <Title />
           <div className='max-w-[700px] mx-auto flex flex-col items-center'>
             <ImQuotesLeft className='mb-2 text-xl text-secondary' />
-            <p className='font-sans text-lg text-center '>
+            <p className='font-sans text-xl text-center '>
                 Uno solo puede ser vencido, pero dos pueden resistir.
             </p>
-            <p className='font-sans text-lg text-center sm:inline'>
-                !La cuerda de tres hilos no se rompe fácilmente!
+            <p className='font-sans text-xl text-center sm:inline'>
+                ! La cuerda de tres hilos no se rompe fácilmente !
             </p>
             <ImQuotesRight className='mt-2 text-xl text-secondary' />
           </div>
