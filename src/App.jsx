@@ -17,6 +17,7 @@ import {
 import { useEffect, useState } from 'react'
 import music1 from './assets/music/Fonseca-QueSuerteTenerte.mp3'
 import { Volume } from './components/Volume'
+import { TimeLine } from './components/timeLine'
 
 const audio = new Audio(music1)
 audio.loop = true
@@ -53,6 +54,7 @@ function App () {
               <SharePhoto />
               <Music />
               <EnvelopeRain />
+              <TimeLine />
               <ConfirmAssistance />
               <Suggestions />
               <Divider />

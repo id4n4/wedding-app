@@ -10,7 +10,7 @@ import { ImgFlour } from '../generalComponents/ImgFlour'
 export const ConfirmAssistance = () => {
   return (
     <SectionLayout>
-      <ImgFlour isLeft={false} />
+      <ImgFlour isLeft />
       <MainLayout id='confirmAssistance'>
         <TitleSection title='Confirmar Asistencia' />
         <ImgTemplate src={pencilImage} alt='Lápiz' />

@@ -3,7 +3,7 @@ import { FaInstagram, FaLinkedin } from 'react-icons/fa'
 export const Footer = () => {
   return (
     <footer className='w-full bg-darkBackground'>
-      <div className='flex items-center justify-around gap-5 p-5'>
+      <div className='flex flex-col items-center justify-around gap-5 p-5 md:flex-row'>
         <div className='flex items-center h-full'>
           <p className='font-sans text-primary'>
             © 2024 - Todos los derechos reservados
