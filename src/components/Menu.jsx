@@ -48,6 +48,13 @@ export const Menu = () => {
               Sugerir canción
             </a>
             <a
+              href='#timeLine'
+              // onClick={(e) => handleClick(e, 'timeLine')}
+              className='hover:text-tertiary'
+            >
+              Ver la línea de tiempo
+            </a>
+            <a
               href='#confirmAssistance'
               onClick={(e) => handleClick(e, 'confirmAssistance')}
               className='hover:text-tertiary'
