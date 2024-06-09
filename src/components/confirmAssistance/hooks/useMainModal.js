@@ -20,7 +20,6 @@ export const useMainModal = () => {
   const codeDebounce = useCallback(
     debounce((value) => {
       const code = spaceAvailable.find(item => item.code.toLowerCase() === value.toLowerCase())
-      console.log(code)
       if (code?.number) {
         setNumber(code.number)
         setCode(prev => ({ ...prev, isValid: true, showMessage: false }))
