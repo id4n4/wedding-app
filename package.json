@@ -14,9 +14,12 @@
     "@headlessui/tailwindcss": "^0.2.0",
     "@react-google-maps/api": "^2.19.3",
     "@tremor/react": "^3.15.0",
+    "axios": "^1.7.2",
     "framer-motion": "^11.0.25",
+    "just-debounce-it": "^3.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.5",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^5.0.1",
     "react-wavify": "^1.10.0"
