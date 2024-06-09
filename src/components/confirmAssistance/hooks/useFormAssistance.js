@@ -19,7 +19,7 @@ export const useFormAssistance = () => {
   const onSubmit = async (values) => {
     try {
       setIsSaving(true)
-      await axios.post(API + 2, {
+      await axios.post(API, {
         Names: values.name,
         NumberOfGuests: values.numberOfGuests,
         Allergies: values.allergies
