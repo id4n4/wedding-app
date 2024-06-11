@@ -7,8 +7,11 @@ import MusicImage from '../../assets/SVGs/music.svg'
 import { ImgTemplate } from '../generalComponents/ImgTemplate'
 import { FaSpotify } from 'react-icons/fa'
 import { ImgFlour } from '../generalComponents/ImgFlour'
+import { useState } from 'react'
+import { ModalTemplate } from '../generalComponents/ModalTemplate'
 
 export const Music = () => {
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <>
       <WaveLines />
@@ -26,12 +29,21 @@ export const Music = () => {
               <p>¡Ayúdanos para que nuestra boda sea inolvidable</p>
               <p>Agrega la música que deseas escuchar dando clic en playlist Spotify</p>
             </div>
-            <Button icon={FaSpotify} className='uppercase'>
+            <Button icon={FaSpotify} className='uppercase' onClick={() => setIsOpen(true)}>
             Playlist Spotify
             </Button>
           </div>
         </MainLayout>
       </SectionLayout>
+      <ModalTemplate
+        isOpen={isOpen}
+        hideModal={() => setIsOpen(false)}
+        title='Playlist Spotify'
+      >
+        <div className='sm:w-[70vw] md:w-[50vw]'>
+          <iframe src='https://open.spotify.com/embed/playlist/7CVl8WkWTCnExNDgVXmJul?utm_source=generator&theme=0' width='100%' height='500' allowFullScreen='' allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture' loading='lazy' />
+        </div>
+      </ModalTemplate>
     </>
   )
 }
