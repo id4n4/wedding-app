@@ -9,6 +9,7 @@ import { FaSpotify } from 'react-icons/fa'
 import { ImgFlour } from '../generalComponents/ImgFlour'
 import { useState } from 'react'
 import { ModalTemplate } from '../generalComponents/ModalTemplate'
+import { ModalContent } from './components/ModalContent'
 
 export const Music = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -40,9 +41,7 @@ export const Music = () => {
         hideModal={() => setIsOpen(false)}
         title='Playlist Spotify'
       >
-        <div className='sm:w-[70vw] md:w-[50vw]'>
-          <iframe src='https://open.spotify.com/embed/playlist/7CVl8WkWTCnExNDgVXmJul?utm_source=generator&theme=0' width='100%' height='500' allowFullScreen='' allow='autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture' loading='lazy' />
-        </div>
+        <ModalContent />
       </ModalTemplate>
     </>
   )
