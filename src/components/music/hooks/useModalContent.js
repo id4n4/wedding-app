@@ -3,22 +3,21 @@ import debounce from 'just-debounce-it'
 import { useCallback, useEffect, useState } from 'react'
 import toast from 'react-hot-toast'
 
-const PLAYLIST_ID = import.meta.env.VITE_API_SPOTIFY_PLAYLIST
-const API_PLAYLIST = 'https://api.spotify.com/v1/playlists/' + PLAYLIST_ID
+const API_PLAYLIST = import.meta.env.VITE_API_URL_PLAYLIST
 const SPOTIFY_CLIENT_ID = import.meta.env.VITE_API_SPOTIFY_CLIENT_ID
 const SPOTIFY_CLIENT_SECRET = import.meta.env.VITE_API_SPOTIFY_CLIENT_SECRET
 const API_SEARCH = 'https://api.spotify.com/v1/search'
 
 export const useModalContent = () => {
-  const [playlistInfo, setPlaylistInfo] = useState({})
+  const [playlistInfo, setPlaylistInfo] = useState([])
   const [isLoading, setIsLoading] = useState(false)
-  const [token, setToken] = useState('')
+  const [spotifyToken, setSpotifyToken] = useState('')
   const [search, setSearch] = useState('')
   const [searchResults, setSearchResults] = useState([])
 
   // #region compareItems
   const compareItemsSaved = (trackId) => {
-    return playlistInfo?.tracks?.items?.some((item) => item.track.id === trackId)
+    return playlistInfo?.some((item) => item.id === trackId)
   }
 
   // #region getPlaylistInfo
@@ -27,10 +26,16 @@ export const useModalContent = () => {
       setIsLoading(true)
       const { data } = await axios.get(API_PLAYLIST, {
         headers: {
-          Authorization: `Bearer ${token}`
+          Accept: 'application/json'
         }
       })
-      setPlaylistInfo(data)
+      setPlaylistInfo(data.map(item => ({
+        id: item.Id,
+        nombre: item.Nombre,
+        autor: item.Autor,
+        url_img: item.imgUrl,
+        link: item.Link
+      })))
     } catch (error) {
       console.error(error)
       toast.error('Error al cargar la playlist')
@@ -48,7 +53,7 @@ export const useModalContent = () => {
           'Content-Type': 'application/x-www-form-urlencoded'
         }
       })
-      setToken(data.access_token)
+      setSpotifyToken(data.access_token)
     } catch (error) {
       console.error(error)
       toast.error('Error al obtener el token')
@@ -60,24 +65,25 @@ export const useModalContent = () => {
   // #region handleSearch
   const handleSearch = (value) => {
     setSearch(value)
-    debounceSearch(value.trim())
+    debounceSearch(value.trim(), spotifyToken)
   }
 
   // #region debounceSearch
   const debounceSearch = useCallback(
-    debounce((value) => {
+    debounce((value, token) => {
       if (value === '') {
         setSearchResults([])
         return
       }
-      searchTrack(value)
+      if (token) searchTrack(value, token)
+      else toast.error('Error al buscar la canción, token jodido')
     }
     , 500),
     []
   )
 
   // #region searchTrack
-  const searchTrack = async (valueToSearch) => {
+  const searchTrack = async (valueToSearch, token) => {
     try {
       const { data } = await axios.get(API_SEARCH, {
         headers: {
@@ -97,20 +103,26 @@ export const useModalContent = () => {
     }
   }
 
-  const addTrackToPlaylist = async (trackUri) => {
+  const addTrackToPlaylist = async (trackId, name, autor, urlImage, link) => {
+    const body = {
+      Id: trackId,
+      Nombre: name,
+      Autor: autor,
+      imgUrl: urlImage,
+      Link: link
+    }
     toast.promise(
-      axios.post(API_PLAYLIST + '/tracks', {
-        uris: [trackUri],
-        position: 0
-      }, {
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      }),
+      axios.post(API_PLAYLIST, body),
       {
         loading: 'Agregando canción a la playlist...',
         success: () => {
-          getPlaylistInfo()
+          setPlaylistInfo(prev => [...prev, {
+            id: trackId,
+            nombre: name,
+            autor,
+            url_img: urlImage,
+            link
+          }])
           return 'Canción agregada a la playlist'
         },
         error: 'Error al agregar la canción a la playlist'
@@ -123,10 +135,10 @@ export const useModalContent = () => {
   }, [])
 
   useEffect(() => {
-    if (token) {
+    if (spotifyToken) {
       getPlaylistInfo()
     }
-  }, [token])
+  }, [spotifyToken])
   return {
     playlistInfo,
     isLoading,
