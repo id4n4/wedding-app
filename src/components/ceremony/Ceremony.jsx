@@ -1,19 +1,19 @@
-import { TitleSection } from '../TitleSection'
-import { WaveLines } from './components/WaveLines'
 import { Button } from '@tremor/react'
+import { useState } from 'react'
+import { Toaster } from 'react-hot-toast'
+import { FaMapLocationDot } from 'react-icons/fa6'
 import { MdLocationOn } from 'react-icons/md'
 import ChurchImage from '../../assets/SVGs/church.svg'
-import { SectionLayout } from '../../layouts/SectionLayout'
-import { MainLayout } from '../../layouts/MainLayout'
-import { ImgTemplate } from '../generalComponents/ImgTemplate'
-import { ImgFlour } from '../generalComponents/ImgFlour'
-import { ModalTemplate } from '../generalComponents/ModalTemplate'
-import { useState } from 'react'
-import { MapComponent } from '../generalComponents/Map'
 import { MAP_CHURCH } from '../../constants/locations'
-import { Toaster } from 'react-hot-toast'
-import { TbRoute } from 'react-icons/tb'
-import { startRoute } from '../../functions/map_functions'
+import { sendToGoogleMap } from '../../functions/map_functions'
+import { MainLayout } from '../../layouts/MainLayout'
+import { SectionLayout } from '../../layouts/SectionLayout'
+import { TitleSection } from '../TitleSection'
+import { ImgFlour } from '../generalComponents/ImgFlour'
+import { ImgTemplate } from '../generalComponents/ImgTemplate'
+import { MapComponent } from '../generalComponents/Map'
+import { ModalTemplate } from '../generalComponents/ModalTemplate'
+import { WaveLines } from './components/WaveLines'
 
 export const Ceremony = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -53,12 +53,12 @@ export const Ceremony = () => {
             options={MAP_CHURCH.options}
           />
           <Button
-            icon={TbRoute}
+            icon={FaMapLocationDot}
             onClick={() => {
-              startRoute(MAP_CHURCH.location)
+              sendToGoogleMap(MAP_CHURCH.location)
             }}
           >
-            Iniciar Ruta
+            Ver en google map
           </Button>
         </div>
       </ModalTemplate>

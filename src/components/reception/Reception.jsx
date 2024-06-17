@@ -1,17 +1,17 @@
-import { TitleSection } from '../TitleSection'
-import ChampanImage from '../../assets/SVGs/champan.svg'
 import { Button } from '@tremor/react'
-import { MdLocationOn } from 'react-icons/md'
-import { SectionLayout } from '../../layouts/SectionLayout'
-import { MainLayout } from '../../layouts/MainLayout'
-import { ImgTemplate } from '../generalComponents/ImgTemplate'
-import { ImgFlour } from '../generalComponents/ImgFlour'
 import { useState } from 'react'
-import { ModalTemplate } from '../generalComponents/ModalTemplate'
-import { MapComponent } from '../generalComponents/Map'
+import { FaMapLocationDot } from 'react-icons/fa6'
+import { MdLocationOn } from 'react-icons/md'
+import ChampanImage from '../../assets/SVGs/champan.svg'
 import { MAP_HACIENDA } from '../../constants/locations'
-import { TbRoute } from 'react-icons/tb'
-import { startRoute } from '../../functions/map_functions'
+import { sendToGoogleMap } from '../../functions/map_functions'
+import { MainLayout } from '../../layouts/MainLayout'
+import { SectionLayout } from '../../layouts/SectionLayout'
+import { TitleSection } from '../TitleSection'
+import { ImgFlour } from '../generalComponents/ImgFlour'
+import { ImgTemplate } from '../generalComponents/ImgTemplate'
+import { MapComponent } from '../generalComponents/Map'
+import { ModalTemplate } from '../generalComponents/ModalTemplate'
 
 export const Reception = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -45,12 +45,12 @@ export const Reception = () => {
             zoom={13}
           />
           <Button
-            icon={TbRoute}
+            icon={FaMapLocationDot}
             onClick={() => {
-              startRoute(MAP_HACIENDA.location)
+              sendToGoogleMap(MAP_HACIENDA.location)
             }}
           >
-            Iniciar Ruta
+            Ver en google map
           </Button>
         </div>
       </ModalTemplate>
