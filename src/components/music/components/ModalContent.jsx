@@ -32,6 +32,7 @@ export const ModalContent = () => {
                           src={urlImage}
                           alt='trackImage'
                           width={40}
+                          className='rounded-lg'
                         />
                         <div>
                           <p className='font-sans'>{nombre}</p>
@@ -62,6 +63,7 @@ export const ModalContent = () => {
                         src={item.album?.images?.[0]?.url}
                         alt='trackImage'
                         width={40}
+                        className='rounded-lg'
                       />
                       <div className='flex-grow'>
                         <p className='font-sans'>{item.name}</p>
