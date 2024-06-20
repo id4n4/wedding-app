@@ -1,9 +1,18 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { HiHeart } from 'react-icons/hi'
+import imgLogo from '../assets/SVGs/logo.svg'
 import '../styles/letter_style.css'
 import { ImgFlour } from './generalComponents/ImgFlour'
+import { useState } from 'react'
+import welcome from '../assets/SVGs/welcome.svg'
 
 export const Letter = ({ isVisible, setIsVisible }) => {
+  const [showMessage, setShowMessage] = useState(false)
+  const changeState = async () => {
+    setShowMessage(true)
+    setTimeout(() => {
+      setIsVisible(false)
+    }, 2000)
+  }
   return (
     <AnimatePresence>
       {
@@ -30,7 +39,7 @@ export const Letter = ({ isVisible, setIsVisible }) => {
               }}
               className='relative cursor-pointer envelope'
               onClick={() => {
-                setIsVisible(false)
+                changeState(false)
               }}
             >
               <div className='back' />
@@ -38,9 +47,24 @@ export const Letter = ({ isVisible, setIsVisible }) => {
               <div className='top' />
               <div className='shadow' />
               <div className='absolute inset-0 flex items-center justify-center'>
-                <HiHeart className='text-5xl text-red-500 duration-500 heart' />
+                <div className='p-5 transition border-4 border-yellow-800 rounded-full bg-primary heart'>
+                  <img src={imgLogo} alt='logo' className='w-[30px]' />
+                </div>
               </div>
             </motion.div>
+          </motion.section>
+        )
+      }
+      {
+        showMessage && isVisible && (
+          <motion.section
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className='fixed inset-0 z-[9999] bg-secondary flex justify-center items-center'
+          >
+            <img src={welcome} alt='welcome' className='w-[80%] h-[80%]' />
           </motion.section>
         )
       }
