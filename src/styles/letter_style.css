@@ -4,6 +4,10 @@
   --letter-bottom: #BFA995;
   --letter-inside: #3C3D40;
 }
+.reverse_leaf {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 
 .letter {
   width: 100%;

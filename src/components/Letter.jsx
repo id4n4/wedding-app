@@ -1,9 +1,12 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import imgLogo from '../assets/SVGs/logo.svg'
-import '../styles/letter_style.css'
-import { ImgFlour } from './generalComponents/ImgFlour'
 import { useState } from 'react'
+import imgLogo from '../assets/SVGs/logo.svg'
 import welcome from '../assets/SVGs/welcome.svg'
+import '../styles/letter_style.css'
+import leaf1 from '../assets/SVGs/leaf1.svg'
+import leaf2 from '../assets/SVGs/leaf2.svg'
+import leaf3 from '../assets/SVGs/leaf3.svg'
+import leaf4 from '../assets/SVGs/leaf4.svg'
 
 export const Letter = ({ isVisible, setIsVisible }) => {
   const [showMessage, setShowMessage] = useState(false)
@@ -27,8 +30,9 @@ export const Letter = ({ isVisible, setIsVisible }) => {
             transition={{ duration: 0.3 }}
             className='fixed -inset-10 -top-20 -bottom-20 z-[9999] bg-primary flex justify-center items-center'
           >
-            <ImgFlour isLeft />
-            <ImgFlour />
+            <img src={leaf4} alt='leaf_tl' className='absolute reverse_leaf  top-10 left-10 max-w-[300px] w-[30%] h-[30%]' />
+            <img src={leaf4} alt='leaf_tr' className='absolute top-10 right-10 max-w-[300px] w-[30%] h-[30%]' />
+            <img src={leaf1} alt='leaf_bl' className='absolute  w-[400px] pointer-events-none' />
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -52,6 +56,9 @@ export const Letter = ({ isVisible, setIsVisible }) => {
                 </div>
               </div>
             </motion.div>
+            <img src={leaf2} alt='leaf_br' className='absolute w-[400px] pointer-events-none' />
+            <img src={leaf3} alt='leaf_bl' className='absolute bottom-10 left-10 max-w-[300px] w-[30%] h-[30%]' />
+            <img src={leaf3} alt='leaf_br' className='absolute bottom-10 right-10 max-w-[300px] w-[30%] h-[30%] reverse_leaf ' />
           </motion.section>
         )
       }
