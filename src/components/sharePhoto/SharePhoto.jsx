@@ -2,7 +2,7 @@ import { Button } from '@tremor/react'
 import { useEffect, useState } from 'react'
 import { FaInstagram } from 'react-icons/fa'
 import ia1 from '../../assets/img/ia1.jpg'
-import ia13 from '../../assets/img/ia13.jpg'
+import ia14 from '../../assets/img/ia14.jpg'
 import ia15 from '../../assets/img/ia15.jpg'
 import ia4 from '../../assets/img/ia4.jpg'
 import ia8 from '../../assets/img/ia8.jpg'
@@ -11,10 +11,10 @@ import { MainLayout } from '../../layouts/MainLayout'
 import { WaveDown } from '../generalComponents/WaveDown'
 import { WaveUp } from '../generalComponents/WaveUp'
 
-const linkHashtag = 'https://www.instagram.com/explore/tags/IvAle_wed/'
+const linkHashtag = 'https://www.instagram.com/explore/tags/IvAle/'
 
 export const SharePhoto = () => {
-  const [items, setItems] = useState([ia1, ia4, ia8, ia13, ia15])
+  const [items, setItems] = useState([ia1, ia4, ia8, ia14, ia15])
   const openInstagram = () => {
     window.open(linkHashtag, '_blank')
   }
@@ -35,8 +35,8 @@ export const SharePhoto = () => {
           <WaveUp />
         </div>
         <div className='relative z-20 h-5 bg-darkBackground'>
-          <h2 className='text-2xl md:text-[4rem] text-center text-primary absolute bottom-full inset-0'>
-            Comparte las fotos de la Boda
+          <h2 className='text-2xl md:text-[3rem] text-center text-primary absolute bottom-full inset-0'>
+            Un minuto, un segundo. Un instante que queda en la eternidad.
           </h2>
         </div>
       </div>
@@ -48,15 +48,12 @@ export const SharePhoto = () => {
           <MainLayout>
             <div>
               <p className='text-xl text-center uppercase text-balance text-main'>
-                Un minuto, un segundo.
-              </p>
-              <p className='text-xl text-center uppercase text-balance text-main'>
-                Un instante que queda en la eternidad.
+                Comparte las fotos de la Boda
               </p>
             </div>
             <div className='flex flex-col items-center justify-center'>
               <FaInstagram className='text-9xl text-main' />
-              <h4 className='text-2xl font-medium text-main'>#IvAle_wed</h4>
+              <h4 className='text-2xl font-medium text-main'>#IvAle</h4>
             </div>
             <Button className='uppercase' onClick={openInstagram}>
               Ver fotos en Instagram
@@ -66,7 +63,7 @@ export const SharePhoto = () => {
         <div className='absolute top-0 bottom-0 z-0 flex flex-wrap w-full h-full overflow-hidden '
         >
           {items.map((item, idx) => (
-            <div key={idx} className='h-full md:w-1/2 lg:w-1/3 xl:w-1/4'
+            <div key={idx} className='w-full h-full md:w-1/2 lg:w-1/3 xl:w-1/4'
             >
               <img src={item} alt='foto' decoding='async' className='object-cover w-full h-full' />
             </div>

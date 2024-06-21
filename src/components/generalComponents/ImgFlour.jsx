@@ -2,7 +2,7 @@ import flourImage from '../../assets/img/flores.png'
 
 export const ImgFlour = ({ isLeft }) => {
   return (
-    <div className={`absolute ${isLeft ? 'left-0' : 'right-0'} z-0  overflow-hidden`}>
+    <div className={`absolute ${isLeft ? 'left-0' : 'right-0'} z-0  overflow-hidden py-10 `}>
       <img
         src={flourImage}
         alt='flor'

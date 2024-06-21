@@ -1,0 +1,23 @@
+.bg-menu::before {
+  background: url('../assets/img/ia13.jpg');
+  background-size: cover;
+  background-position-x: right;
+  background-position-y: top;
+  opacity: 0.6;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-menu {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

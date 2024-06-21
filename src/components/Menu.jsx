@@ -1,6 +1,7 @@
 import { MainLayout } from '../layouts/MainLayout'
 import { SectionLayout } from '../layouts/SectionLayout'
 import ivanAlejaImage from '../assets/SVGs/ivan_aleja.svg'
+import '../styles/menu.css'
 
 export const Menu = () => {
   const handleClick = (e, idElement) => {
@@ -9,55 +10,56 @@ export const Menu = () => {
     element.scrollIntoView({ behavior: 'smooth', block: 'center' })
   }
   return (
-    <SectionLayout>
+    <SectionLayout className='bg-menu'>
       <MainLayout>
-        <div className='flex items-center justify-between gap-10'>
+        <div className='flex items-center justify-between gap-10 py-10 '
+        >
           <img
             src={ivanAlejaImage}
             alt='Iván y Aleja'
             decoding='async'
             className='w-1/2 '
           />
-          <div className='flex flex-col gap-5 md:gap-2 text-end text-primary'>
+          <div className='flex flex-col gap-5 text-white md:gap-2 text-end'>
             <a
               href='#counter'
               onClick={(e) => handleClick(e, 'counter')}
-              className='hover:text-tertiary'
+              className='transition hover:scale-105'
             >
               Ir al conteo regresivo
             </a>
             <a
               href='#ceremony'
               onClick={(e) => handleClick(e, 'ceremony')}
-              className='hover:text-tertiary'
+              className='transition hover:scale-105'
             >
               Ir al lugar de la ceremonia
             </a>
             <a
               href='#reception'
               onClick={(e) => handleClick(e, 'reception')}
-              className='hover:text-tertiary'
+              className='transition hover:scale-105'
             >
               Ir al lugar de la fiesta
             </a>
             <a
               href='#music'
               onClick={(e) => handleClick(e, 'music')}
-              className='hover:text-tertiary'
+              className='transition hover:scale-105'
             >
               Sugerir canción
             </a>
             <a
               href='#timeLine'
               // onClick={(e) => handleClick(e, 'timeLine')}
-              className='hover:text-tertiary'
+              className='transition hover:scale-105'
             >
               Ver la línea de tiempo
             </a>
             <a
               href='#confirmAssistance'
               onClick={(e) => handleClick(e, 'confirmAssistance')}
-              className='hover:text-tertiary'
+              className='transition hover:scale-105'
             >
               Confirmar mi asistencia
             </a>
