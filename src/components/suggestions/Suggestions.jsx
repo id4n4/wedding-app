@@ -19,7 +19,7 @@ export const Suggestions = () => {
   }
   return (
     <SectionLayout>
-      <ImgFlour />
+      <ImgFlour className='absolute right-0 z-0 py-10 overflow-hidden lg:hidden'/>
       <MainLayout>
         <TitleSection title='Sugerencias' />
         <div className='flex justify-around w-full gap-2'>
