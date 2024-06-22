@@ -31,7 +31,7 @@ export const FormAssistance = ({ spaceAvailable }) => {
           />
         </div>
         <div>
-          <Text>¿Cuantas personas irán?</Text>
+          <Text>¿Cuantas cupos utilizarás?</Text>
           <Controller
             control={control}
             name='numberOfGuests'
@@ -56,7 +56,7 @@ export const FormAssistance = ({ spaceAvailable }) => {
           />
         </div>
         <div>
-          <Text>¿Tienes alergias? (opcional)</Text>
+          <Text>Queremos que ese día disfrutes de nuestro menú de boda tanto como nosotros, así que si tienes algún tipo de alergia o intolerancia alimentaria háznoslo saber a continuación:</Text>
           <Controller
             control={control}
             name='allergies'
