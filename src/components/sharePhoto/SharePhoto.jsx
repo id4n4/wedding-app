@@ -11,7 +11,7 @@ import { MainLayout } from '../../layouts/MainLayout'
 import { WaveDown } from '../generalComponents/WaveDown'
 import { WaveUp } from '../generalComponents/WaveUp'
 
-const linkHashtag = 'https://www.instagram.com/explore/tags/IvAle/'
+const linkHashtag = 'https://www.instagram.com/explore/tags/IvAle_Wed/'
 
 export const SharePhoto = () => {
   const [items, setItems] = useState([ia1, ia4, ia8, ia14, ia15])
@@ -53,7 +53,7 @@ export const SharePhoto = () => {
             </div>
             <div className='flex flex-col items-center justify-center'>
               <FaInstagram className='text-9xl text-main' />
-              <h4 className='text-2xl font-medium text-main'>#IvAle</h4>
+              <h4 className='text-2xl font-medium text-main'>#IvAle_Wed</h4>
             </div>
             <Button className='uppercase' onClick={openInstagram}>
               Ver fotos en Instagram
