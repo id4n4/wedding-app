@@ -19,7 +19,7 @@ export const content = {
   music,
   imgLogo,
   novio: 'Roberto',
-  novia: 'María de los ángeles',
+  novia: 'María de los Ángeles',
   fecha: new Date('2024-10-05'),
   fechaConfirm: new Date('2024-09-20'),
   imgHero,
