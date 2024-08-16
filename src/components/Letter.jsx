@@ -54,7 +54,7 @@ export const Letter = ({ isVisible, setIsVisible }) => {
                 <div className='shadow' />
                 <div className='absolute inset-0 flex items-center justify-center'>
                   <div className='px-3 py-2 transition border-4 border-yellow-800 rounded-full bg-primary heart'>
-                    <img src={content.imgLogo} alt='logo' className='w-[30px]' />
+                    <img src={content.namesImg} alt='logo' className='w-[30px]' />
                   </div>
                 </div>
               </motion.div>
