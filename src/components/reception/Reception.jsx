@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { FaMapLocationDot } from 'react-icons/fa6'
 import { MdLocationOn } from 'react-icons/md'
 import ChampanImage from '../../assets/SVGs/champan.svg'
-import { MAP_HACIENDA } from '../../constants/locations'
+import { content } from '../../config/content'
 import { sendToGoogleMap } from '../../functions/map_functions'
 import { MainLayout } from '../../layouts/MainLayout'
 import { SectionLayout } from '../../layouts/SectionLayout'
@@ -12,7 +12,6 @@ import { ImgFlour } from '../generalComponents/ImgFlour'
 import { ImgTemplate } from '../generalComponents/ImgTemplate'
 import { MapComponent } from '../generalComponents/Map'
 import { ModalTemplate } from '../generalComponents/ModalTemplate'
-import { content } from '../../config/content'
 
 export const Reception = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -42,7 +41,6 @@ export const Reception = () => {
         <div className='w-[80vw] flex flex-col items-center gap-2'>
           <MapComponent
             center={content.reception.location}
-            options={MAP_HACIENDA.options}
             zoom={13}
           />
           <Button

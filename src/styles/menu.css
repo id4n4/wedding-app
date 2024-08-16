@@ -1,10 +1,10 @@
 
 
 .bg-menu::before {
-  background: url('../assets/img/ia13.jpg');
+  background: url('../assets/img-personal/ia3.jpg');
   background-size: cover;
   background-position-x: right;
-  background-position-y: top;
+  background-position-y: center;
   opacity: 0.6;
   content: "";
   position: absolute;

@@ -28,7 +28,7 @@ export const Week = () => {
                       src={heart}
                       alt='heart'
                       width={45}
-                      className='z-0 ml-2'
+                      className='z-0 ml-1'
                     />
                     <p className='absolute top-0 z-20 left-4'>{day}</p>
                   </div>)

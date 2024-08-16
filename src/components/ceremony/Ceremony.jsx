@@ -4,7 +4,7 @@ import { Toaster } from 'react-hot-toast'
 import { FaMapLocationDot } from 'react-icons/fa6'
 import { MdLocationOn } from 'react-icons/md'
 import ChurchImage from '../../assets/SVGs/church.svg'
-import { MAP_CHURCH } from '../../constants/locations'
+import { content } from '../../config/content'
 import { sendToGoogleMap } from '../../functions/map_functions'
 import { MainLayout } from '../../layouts/MainLayout'
 import { SectionLayout } from '../../layouts/SectionLayout'
@@ -14,7 +14,6 @@ import { ImgTemplate } from '../generalComponents/ImgTemplate'
 import { MapComponent } from '../generalComponents/Map'
 import { ModalTemplate } from '../generalComponents/ModalTemplate'
 import { WaveLines } from './components/WaveLines'
-import { content } from '../../config/content'
 
 export const Ceremony = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -51,7 +50,6 @@ export const Ceremony = () => {
         <div className='w-[80vw] flex flex-col items-center gap-2'>
           <MapComponent
             center={content.ceremony.location}
-            options={MAP_CHURCH.options}
           />
           <Button
             icon={FaMapLocationDot}

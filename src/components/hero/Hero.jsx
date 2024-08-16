@@ -24,9 +24,13 @@ export const Hero = () => {
           <Title />
           <div className='max-w-[700px] mx-auto flex flex-col items-center'>
             <ImQuotesLeft className='mb-2 text-xl text-secondary' />
-            <p className='font-sans text-xl text-center whitespace-normal md:whitespace-pre'>
-              {content.phraseHero}
-            </p>
+            {
+              content.phraseHero.map((phrase, index) => (
+                <p key={index} className='font-sans text-xl text-center md:text-3xl'>
+                  {phrase}
+                </p>
+              ))
+            }
             <ImQuotesRight className='mt-2 text-xl text-secondary' />
           </div>
         </motion.div>

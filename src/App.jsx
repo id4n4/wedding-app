@@ -34,11 +34,11 @@ function App () {
     setHasVolume(prev => !prev)
   }
 
-  useEffect(() => {
-    if (!isVisible) {
-      audio.play()
-    }
-  }, [isVisible])
+  // useEffect(() => {
+  //   if (!isVisible) {
+  //     audio.play()
+  //   }
+  // }, [isVisible])
   return (
     <section className='w-full h-full overflow-x-hidden overflow-y-auto bg-background '>
       <Letter isVisible={isVisible} setIsVisible={setIsVisible} />
@@ -52,11 +52,11 @@ function App () {
               <Reception />
               <Outfit />
               <SharePhoto />
-              <Music />
+              {/* <Music /> */}
               <EnvelopeRain />
               <TimeLine />
               <ConfirmAssistance />
-              <Suggestions />
+              {/* <Suggestions /> */}
               <Divider />
               <Menu />
               <Footer />

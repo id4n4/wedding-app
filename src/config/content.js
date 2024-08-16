@@ -1,12 +1,10 @@
 import imgLogo from '../assets/SVGs/logo.svg'
-import imgHero from '../assets/img/ia12.jpg'
+import imgHero from '../assets/img-personal/ia2.jpg'
 import music from '../assets/music/Fonseca-QueSuerteTenerte.mp3'
 
-import ia1 from '../assets/img/ia1.jpg'
-import ia14 from '../assets/img/ia14.jpg'
-import ia15 from '../assets/img/ia15.jpg'
-import ia4 from '../assets/img/ia4.jpg'
-import ia8 from '../assets/img/ia8.jpg'
+import ia1 from '../assets/img-personal/ia1.jpg'
+import ia3 from '../assets/img-personal/ia3.jpg'
+import ia4 from '../assets/img-personal/ia4.jpg'
 
 import timeLine from '../assets/SVGs/timeLine.svg'
 
@@ -20,32 +18,32 @@ import namesImg from '../assets/SVGs/ivan_aleja.svg'
 export const content = {
   music,
   imgLogo,
-  novio: 'Novio',
-  novia: 'Novia',
-  fecha: new Date('2024-08-24'),
-  fechaConfirm: new Date('2024-07-15'),
+  novio: 'Roberto',
+  novia: 'María de los ángeles',
+  fecha: new Date('2024-10-05'),
+  fechaConfirm: new Date('2024-09-20'),
   imgHero,
-  phraseHero: 'Uno solo puede ser vencido, pero dos pueden resistir.\n ! La cuerda de tres hilos no se rompe fácilmente !',
+  phraseHero: ['Así que ya no son dos, sino una sola carne.', 'Lo que Dios ha unido, no lo desuna el hombre', 'Mateo 19:6'],
   ceremony: {
-    place: 'Parroquia San Carlos',
-    city: 'San Carlos - Córdoba',
-    time: '5:00 P.M.',
+    place: 'Parroquia San Bernardo Abad',
+    city: 'San bernardo del viento',
+    time: '10:00 A.M.',
     location: {
-      lat: 8.796152382993998,
-      lng: -75.69899069970378
+      lat: 9.356147416289378,
+      lng: -75.95170395175768
     }
   },
   reception: {
-    place: 'Hacienda el paraíso',
-    city: 'San Carlos - Córdoba',
-    time: '7:00 P.M.',
+    place: 'Hotel bar restaurante casa arrecife',
+    city: 'San bernardo del viento',
+    time: '12:00 P.M.',
     location: {
-      lat: 8.845813814082454,
-      lng: -75.73425553581112
+      lat: 9.314103873038617,
+      lng: -76.09823644160083
     }
   },
-  photos: [ia1, ia4, ia8, ia14, ia15],
-  hashtag: 'ivale_wed',
+  photos: [ia1, ia4, ia3, imgHero],
+  hashtag: 'mercadonegrete',
   timeLine,
   sheetApi: 'https://api.sheetapi.rest/api/v1/sheet/6fiXmjVGy_mkGbFBaLPfzm',
   sheetPlaylistApi: 'https://api.sheetapi.rest/api/v1/sheet/0qUcYWdhAjBnOHp7s3RzA',
