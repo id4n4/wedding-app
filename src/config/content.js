@@ -25,7 +25,7 @@ export const content = {
   imgHero,
   phraseHero: 'Uno solo puede ser vencido, pero dos pueden resistir.\n ! La cuerda de tres hilos no se rompe fácilmente !',
   ceremony: {
-    place: 'Parroquia San Carlos Borromeo',
+    place: 'Parroquia San Carlos',
     city: 'San Carlos - Córdoba',
     time: '5:00 P.M.',
     location: {
