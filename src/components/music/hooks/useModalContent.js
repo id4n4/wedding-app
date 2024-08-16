@@ -2,8 +2,9 @@ import axios from 'axios'
 import debounce from 'just-debounce-it'
 import { useCallback, useEffect, useState } from 'react'
 import toast from 'react-hot-toast'
+import { content } from '../../../config/content'
 
-const API_PLAYLIST = import.meta.env.VITE_API_URL_PLAYLIST
+const API_PLAYLIST = content.sheetPlaylistApi
 const SPOTIFY_CLIENT_ID = import.meta.env.VITE_API_SPOTIFY_CLIENT_ID
 const SPOTIFY_CLIENT_SECRET = import.meta.env.VITE_API_SPOTIFY_CLIENT_SECRET
 const API_SEARCH = 'https://api.spotify.com/v1/search'

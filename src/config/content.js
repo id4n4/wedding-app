@@ -44,6 +44,8 @@ export const content = {
   },
   photos: [ia1, ia4, ia8, ia14, ia15],
   hashtag: 'ivale_wed',
-  timeLine
+  timeLine,
+  sheetApi: 'https://api.sheetapi.rest/api/v1/sheet/6fiXmjVGy_mkGbFBaLPfzm',
+  sheetPlaylistApi: 'https://api.sheetapi.rest/api/v1/sheet/0qUcYWdhAjBnOHp7s3RzA'
 
 }

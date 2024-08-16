@@ -2,8 +2,9 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import toast from 'react-hot-toast'
+import { content } from '../../../config/content'
 
-const API = import.meta.env.VITE_API_URL
+const API = content.sheetApi
 
 export const useFormAssistance = () => {
   const [isSaving, setIsSaving] = useState(false)
