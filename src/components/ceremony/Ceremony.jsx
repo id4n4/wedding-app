@@ -27,9 +27,9 @@ export const Ceremony = () => {
         <TitleSection title='Ceremonia' />
         <ImgTemplate src={ChurchImage} alt='Iglesia' />
         <div className='text-lg text-center uppercase md:text-xl text-primary'>
-          <p>Parroquia San Carlos Borromeo</p>
-          <p>San Carlos - Córdoba</p>
-          <p>5:00 P.M.</p>
+          <p>{content.ceremony.place}</p>
+          <p>{content.ceremony.city}</p>
+          <p>{content.ceremony.time}</p>
         </div>
         <Button
           icon={MdLocationOn}
