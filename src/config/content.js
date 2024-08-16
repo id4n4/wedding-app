@@ -18,8 +18,8 @@ import timeLine from '../assets/SVGs/timeLine.svg'
 export const content = {
   music,
   imgLogo,
-  novio: 'Iván',
-  novia: 'Aleja',
+  novio: 'Novio',
+  novia: 'Novia',
   fecha: new Date('2024-08-24'),
   fechaConfirm: new Date('2024-07-15'),
   imgHero,
