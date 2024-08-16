@@ -27,7 +27,7 @@ export const SharePhoto = () => {
   return (
     <section className='flex flex-col w-full h-full font-sans '>
       <div>
-        <div className=' bg-background'>
+        <div className=' bg-gradient-to-t from-secondary to-background to-10%'>
           <WaveUp />
         </div>
         <div className='relative z-20 h-5 bg-darkBackground'>
@@ -38,7 +38,7 @@ export const SharePhoto = () => {
       </div>
       <div className='relative'>
         <div className='relative z-10 pb-8 overflow-hidden bg-black/50'>
-          <div className='relative z-10 rotate-180'>
+          <div className='relative z-10 rotate-180 '>
             <WaveDown />
           </div>
           <MainLayout>

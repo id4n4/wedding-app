@@ -40,29 +40,27 @@ function App () {
   //   }
   // }, [isVisible])
   return (
-    <section className='w-full h-full overflow-x-hidden overflow-y-auto bg-background '>
+    <section className='relative w-full h-screen overflow-x-hidden bg-background '
+      style={{
+        overflowY: isVisible ? 'hidden' : 'auto'
+      }}
+    >
       <Letter isVisible={isVisible} setIsVisible={setIsVisible} />
-      {
-        !isVisible &&
-          (
-            <>
-              <Hero />
-              <Counter />
-              <Ceremony />
-              <Reception />
-              <Outfit />
-              <SharePhoto />
-              {/* <Music /> */}
-              <EnvelopeRain />
-              <TimeLine />
-              <ConfirmAssistance />
-              {/* <Suggestions /> */}
-              <Divider />
-              <Menu />
-              <Footer />
-              <Volume hasVolume={hasVolume} onChangeVolume={onChangeVolume} />
-            </>)
-      }
+      <Hero />
+      <Counter />
+      <Ceremony />
+      <Reception />
+      <Outfit />
+      <SharePhoto />
+      {/* <Music /> */}
+      <EnvelopeRain />
+      <TimeLine />
+      <ConfirmAssistance />
+      {/* <Suggestions /> */}
+      <Divider />
+      <Menu />
+      <Footer />
+      <Volume hasVolume={hasVolume} onChangeVolume={onChangeVolume} />
     </section>
   )
 }
