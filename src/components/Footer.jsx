@@ -25,21 +25,6 @@ export const Footer = () => {
             </a>
           </div>
           <div className='text-primary'>
-            <h3 className='font-bold'>Wedding Planner</h3>
-            <a
-              href='https://www.instagram.com/angiesweddingplanner?igsh=MWE1M2dhZHB1Znhvcg=='
-              target='_blank'
-              className='cursor-pointer'
-              rel='noreferrer'
-            >
-              <div className='flex items-center gap-2 transition-all select-none hover:scale-105 hover:text-headline'>
-                <FaInstagram className='text-lg' />
-                <h3 className='font-sans'>Angie Fuentes</h3>
-              </div>
-            </a>
-
-          </div>
-          <div className='text-primary'>
             <h3 className='font-bold'>Desarrollo</h3>
             <a
               href='https://www.linkedin.com/in/juan-david-sanchez-hoyos-9414b817b/'

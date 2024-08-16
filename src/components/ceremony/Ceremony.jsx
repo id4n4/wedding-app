@@ -14,6 +14,7 @@ import { ImgTemplate } from '../generalComponents/ImgTemplate'
 import { MapComponent } from '../generalComponents/Map'
 import { ModalTemplate } from '../generalComponents/ModalTemplate'
 import { WaveLines } from './components/WaveLines'
+import { content } from '../../config/content'
 
 export const Ceremony = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -49,13 +50,13 @@ export const Ceremony = () => {
       >
         <div className='w-[80vw] flex flex-col items-center gap-2'>
           <MapComponent
-            center={MAP_CHURCH.location}
+            center={content.ceremony.location}
             options={MAP_CHURCH.options}
           />
           <Button
             icon={FaMapLocationDot}
             onClick={() => {
-              sendToGoogleMap(MAP_CHURCH.location)
+              sendToGoogleMap(content.ceremony.location)
             }}
           >
             Ver en google map

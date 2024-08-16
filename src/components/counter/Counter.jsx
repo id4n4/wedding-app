@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react'
 import '../../styles/counter_style.css'
 import points from '../../assets/SVGs/groupPoints.svg'
 import { WaveDown } from '../generalComponents/WaveDown'
+import { content } from '../../config/content'
 
 export const Counter = () => {
   const calculateTimeLeft = () => {
-    const difference = +new Date('2024-08-24') - +new Date()
+    const difference = +content.fecha - +new Date()
     let timeLeft = {}
 
     if (difference > 0) {

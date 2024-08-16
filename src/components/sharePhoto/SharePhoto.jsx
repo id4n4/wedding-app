@@ -1,20 +1,16 @@
 import { Button } from '@tremor/react'
 import { useEffect, useState } from 'react'
 import { FaInstagram } from 'react-icons/fa'
-import ia1 from '../../assets/img/ia1.jpg'
-import ia14 from '../../assets/img/ia14.jpg'
-import ia15 from '../../assets/img/ia15.jpg'
-import ia4 from '../../assets/img/ia4.jpg'
-import ia8 from '../../assets/img/ia8.jpg'
 
 import { MainLayout } from '../../layouts/MainLayout'
 import { WaveDown } from '../generalComponents/WaveDown'
 import { WaveUp } from '../generalComponents/WaveUp'
+import { content } from '../../config/content'
 
-const linkHashtag = 'https://www.instagram.com/explore/tags/IvAle_Wed/'
+const linkHashtag = 'https://www.instagram.com/explore/tags/' + content.hashtag
 
 export const SharePhoto = () => {
-  const [items, setItems] = useState([ia1, ia4, ia8, ia14, ia15])
+  const [items, setItems] = useState(content.photos)
   const openInstagram = () => {
     window.open(linkHashtag, '_blank')
   }
@@ -53,7 +49,7 @@ export const SharePhoto = () => {
             </div>
             <div className='flex flex-col items-center justify-center'>
               <FaInstagram className='text-9xl text-main' />
-              <h4 className='text-2xl font-medium text-main'>#IvAle_Wed</h4>
+              <h4 className='text-2xl font-medium text-main'>#{content.hashtag}</h4>
             </div>
             <Button className='uppercase' onClick={openInstagram}>
               Ver fotos en Instagram

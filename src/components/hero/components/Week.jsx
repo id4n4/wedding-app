@@ -1,42 +1,42 @@
+import { useMemo } from 'react'
 import heart from '../../../assets/SVGs/heart.svg'
+import { content } from '../../../config/content'
+import { obtenerSemanaCompleta } from '../../../functions/dateHelper'
+
+const weddingDay = content.fecha.getDate() + 1
 
 export const Week = () => {
+  const month = useMemo(
+    () => content.fecha.toLocaleString('es-ES', { month: 'long' }),
+    []
+  )
+  const daysOfWeek = useMemo(() => {
+    return obtenerSemanaCompleta(content.fecha)
+  }, [])
   return (
     <div className='flex flex-col items-center space-y-2'>
-      <h1 className='text-4xl tracking-[1rem] uppercase'>Agosto</h1>
+      <h1 className='text-4xl tracking-[1rem] uppercase'>{month}</h1>
       <div className='flex justify-center gap-3 text-xl md:gap-10'>
-        <div className='flex flex-col items-center' >
-          <h2>Dom</h2>
-          <p>18</p>
-        </div >
-        <div className='flex flex-col items-center' >
-          <h2>Lun</h2>
-          <p>19</p>
-        </div>
-        <div className='flex flex-col items-center'>
-          <h2>Mar</h2>
-          <p>20</p>
-        </div>
-        <div className='flex flex-col items-center'>
-          <h2>Mie</h2>
-          <p>21</p>
-        </div>
-        <div className='flex flex-col items-center'>
-          <h2>Jue</h2>
-          <p>22</p>
-        </div>
-        <div className='flex flex-col items-center'>
-          <h2>Vie</h2>
-          <p>23</p>
-        </div>
-        <div className='flex flex-col items-center'>
-          <h2>Sab</h2>
-          <div className='relative'>
-            <img src={heart} alt='heart' className='z-0 absolute  scale-[2] bottom-1 -right-1 ' />
-            <p className='relative z-20'>24</p>
-          </div>
-        </div>
+        {daysOfWeek.map(({ label, day }) => (
+          <div key={label} className='flex flex-col items-center'>
+            <h2>{label}</h2>
+            {
+              day === weddingDay
+                ? (
+                  <div className='relative'>
+                    <img
+                      src={heart}
+                      alt='heart'
+                      width={45}
+                      className='z-0 ml-2'
+                    />
+                    <p className='absolute top-0 z-20 left-4'>{day}</p>
+                  </div>)
+                : <p>{day}</p>
 
+            }
+          </div>
+        ))}
       </div>
     </div>
   )

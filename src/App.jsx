@@ -15,11 +15,11 @@ import {
   Suggestions
 } from './components'
 import { useEffect, useState } from 'react'
-import music1 from './assets/music/Fonseca-QueSuerteTenerte.mp3'
 import { Volume } from './components/Volume'
 import { TimeLine } from './components/timeLine'
+import { content } from './config/content'
 
-const audio = new Audio(music1)
+const audio = new Audio(content.music)
 audio.loop = true
 
 function App () {

@@ -9,9 +9,15 @@ import { ImgFlour } from '../generalComponents/ImgFlour'
 import { useState } from 'react'
 import { MainModal } from './components/MainModal'
 import { ModalTemplate } from '../generalComponents/ModalTemplate'
+import { content } from '../../config/content'
+
+const day = content.fechaConfirm.getDate() + 1
+const month = content.fechaConfirm.toLocaleDateString('es-ES', { month: 'long' })
+const year = content.fechaConfirm.getFullYear()
 
 export const ConfirmAssistance = () => {
   const [showModal, setShowModal] = useState(false)
+  console.log(content.fechaConfirm.getDay())
   return (
     <SectionLayout>
       <ImgFlour isLeft />
@@ -19,7 +25,7 @@ export const ConfirmAssistance = () => {
         <TitleSection title='Confirmar Asistencia' />
         <ImgTemplate src={pencilImage} alt='Lápiz' />
         <div className='mx-auto text-xl text-center text-primary md:w-1/2'>
-          <p>Para nosotros es muy importante que confirmes tu asistencia a nuestra boda antes del 15 de Julio de 2024</p>
+          <p>Para nosotros es muy importante que confirmes tu asistencia a nuestra boda antes del {day}  de {month} de {year}</p>
         </div>
         <Button icon={FaUserCheck} className='uppercase' onClick={() => setShowModal(true)}>
           Confirmar Asistencia

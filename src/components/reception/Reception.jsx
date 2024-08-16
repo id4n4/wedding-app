@@ -12,6 +12,7 @@ import { ImgFlour } from '../generalComponents/ImgFlour'
 import { ImgTemplate } from '../generalComponents/ImgTemplate'
 import { MapComponent } from '../generalComponents/Map'
 import { ModalTemplate } from '../generalComponents/ModalTemplate'
+import { content } from '../../config/content'
 
 export const Reception = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -22,9 +23,9 @@ export const Reception = () => {
         <TitleSection title='Recepción' />
         <ImgTemplate src={ChampanImage} alt='champan' />
         <div className='text-lg text-center uppercase md:text-xl text-primary'>
-          <p>Hacienda el paraíso</p>
-          <p>San Carlos Córdoba</p>
-          <p>7:00 P.M.</p>
+          <p>{content.reception.place}</p>
+          <p>{content.reception.city}</p>
+          <p>{content.reception.time}</p>
         </div>
         <Button onClick={() => {
           setIsOpen(true)
@@ -40,14 +41,14 @@ export const Reception = () => {
       >
         <div className='w-[80vw] flex flex-col items-center gap-2'>
           <MapComponent
-            center={MAP_HACIENDA.location}
+            center={content.reception.location}
             options={MAP_HACIENDA.options}
             zoom={13}
           />
           <Button
             icon={FaMapLocationDot}
             onClick={() => {
-              sendToGoogleMap(MAP_HACIENDA.location)
+              sendToGoogleMap(content.reception.location)
             }}
           >
             Ver en google map

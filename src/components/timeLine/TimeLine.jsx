@@ -1,4 +1,4 @@
-import TimeLineSVG from '../../assets/SVGs/timeLine.svg'
+import { content } from '../../config/content'
 import { MainLayout } from '../../layouts/MainLayout'
 import { SectionLayout } from '../../layouts/SectionLayout'
 import { TitleSection } from '../TitleSection'
@@ -13,7 +13,7 @@ export const TimeLine = () => {
         <TitleSection title='Línea de tiempo' />
         <ImgFlour />
         <img
-          src={TimeLineSVG}
+          src={content.timeLine}
           alt='Línea de tiempo'
           decoding='async'
           className='w-full max-w-[1000px]'
