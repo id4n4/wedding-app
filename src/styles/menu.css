@@ -3,7 +3,7 @@
 .bg-menu::before {
   background: url('../assets/img-personal/ia3.jpg');
   background-size: cover;
-  background-position-x: right;
+  background-position-x: center;
   background-position-y: center;
   opacity: 0.6;
   content: "";
@@ -17,7 +17,6 @@
 .bg-menu {
   position: relative;
   width: 100%;
-  height: 100%;
   background-color: black;
   display: flex;
   justify-content: center;

@@ -8,7 +8,7 @@ import ia4 from '../assets/img-personal/ia4.jpg'
 
 import timeLine from '../assets/SVGs/timeLine.svg'
 
-import namesImg from '../assets/SVGs/ivan_aleja.svg'
+import namesImg from '../assets/SVGs/novio_novia.svg'
 
 // Al modificar los datos, se debe tener en cuenta:
 // modificar index.html
@@ -47,5 +47,6 @@ export const content = {
   timeLine,
   sheetApi: 'https://api.sheetapi.rest/api/v1/sheet/6fiXmjVGy_mkGbFBaLPfzm',
   sheetPlaylistApi: 'https://api.sheetapi.rest/api/v1/sheet/0qUcYWdhAjBnOHp7s3RzA',
-  namesImg
+  namesImg,
+  urlWhatsapp: 'http://wa.link/lrpyi4'
 }

@@ -11,7 +11,7 @@ export const Hero = () => {
       <div className='absolute top-0 left-0 w-full h-full' >
         <img src={content.imgHero} alt={'imgHero'} loading='lazy' decoding='async' className='object-cover w-full h-full bg-primary'/>
       </div>
-      <div className='z-10 flex items-center justify-center flex-grow bg-black/40'>
+      <div className='z-10 flex items-center justify-center flex-grow bg-black/50'>
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -35,7 +35,7 @@ export const Hero = () => {
           </div>
         </motion.div>
       </div>
-      <div className='z-10 bg-gradient-to-t from-secondary  to-black/40 to-20%'>
+      <div className='z-10 bg-gradient-to-t from-secondary  to-black/50 to-20%'>
         <WaveUp />
       </div>
     </motion.section>

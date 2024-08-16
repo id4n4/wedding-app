@@ -1,4 +1,5 @@
 import { Divider } from '@tremor/react'
+import { useEffect, useState } from 'react'
 import {
   Ceremony,
   ConfirmAssistance,
@@ -8,13 +9,10 @@ import {
   Hero,
   Letter,
   Menu,
-  Music,
   Outfit,
   Reception,
-  SharePhoto,
-  Suggestions
+  SharePhoto
 } from './components'
-import { useEffect, useState } from 'react'
 import { Volume } from './components/Volume'
 import { TimeLine } from './components/timeLine'
 import { content } from './config/content'
@@ -34,11 +32,11 @@ function App () {
     setHasVolume(prev => !prev)
   }
 
-  // useEffect(() => {
-  //   if (!isVisible) {
-  //     audio.play()
-  //   }
-  // }, [isVisible])
+  useEffect(() => {
+    if (!isVisible) {
+      audio.play()
+    }
+  }, [isVisible])
   return (
     <section className='relative w-full h-screen overflow-x-hidden bg-background '
       style={{
