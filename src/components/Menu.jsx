@@ -1,6 +1,6 @@
+import { content } from '../config/content'
 import { MainLayout } from '../layouts/MainLayout'
 import { SectionLayout } from '../layouts/SectionLayout'
-import ivanAlejaImage from '../assets/SVGs/ivan_aleja.svg'
 import '../styles/menu.css'
 
 export const Menu = () => {
@@ -15,7 +15,7 @@ export const Menu = () => {
         <div className='flex items-center justify-between gap-10 py-10 '
         >
           <img
-            src={ivanAlejaImage}
+            src={content.namesImg}
             alt='Iván y Aleja'
             decoding='async'
             className='w-1/2 '

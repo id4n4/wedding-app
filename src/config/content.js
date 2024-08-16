@@ -10,10 +10,12 @@ import ia8 from '../assets/img/ia8.jpg'
 
 import timeLine from '../assets/SVGs/timeLine.svg'
 
+import namesImg from '../assets/SVGs/ivan_aleja.svg'
+
 // Al modificar los datos, se debe tener en cuenta:
 // modificar index.html
-// modificar .env
 // modificar Suggestions.jsx - urls
+// modificar menu.css - img
 
 export const content = {
   music,
@@ -46,6 +48,6 @@ export const content = {
   hashtag: 'ivale_wed',
   timeLine,
   sheetApi: 'https://api.sheetapi.rest/api/v1/sheet/6fiXmjVGy_mkGbFBaLPfzm',
-  sheetPlaylistApi: 'https://api.sheetapi.rest/api/v1/sheet/0qUcYWdhAjBnOHp7s3RzA'
-
+  sheetPlaylistApi: 'https://api.sheetapi.rest/api/v1/sheet/0qUcYWdhAjBnOHp7s3RzA',
+  namesImg
 }
