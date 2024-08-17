@@ -19,14 +19,14 @@ export const content = {
   music,
   imgLogo,
   novio: {
-    name: 'Javier Mercado',
+    name: 'Roberto',
     parents: {
       father: 'Roberto Mercado',
       mother: 'Rosario Bermudez'
     }
   },
   novia: {
-    name: 'Ingrid Negrete',
+    name: 'María de los Ángeles',
     parents: {
       father: 'Rodolfo Negrete',
       mother: 'Elsis Hoyos'

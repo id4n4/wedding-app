@@ -8,8 +8,8 @@ export const Parents = () => {
     <SectionLayout>
       {/* Add your code here */}
       <MainLayout id='parents'>
-        <p className='text-xl text-primary'>Con la bendición de dios y de nuestros padres</p>
-        <div className='flex items-center gap-10 text-xl text-primary'>
+        <p className='text-xl text-center text-primary'>Con la bendición de dios y de nuestros padres</p>
+        <div className='flex flex-col items-center gap-10 text-lg text-center md:flex-row text-primary'>
           <div>
             <p>{content.novio.parents.father}</p>
             <p>{content.novio.parents.mother}</p>
