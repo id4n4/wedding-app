@@ -18,8 +18,20 @@ import namesImg from '../assets/SVGs/novio_novia.svg'
 export const content = {
   music,
   imgLogo,
-  novio: 'Roberto',
-  novia: 'María de los Ángeles',
+  novio: {
+    name: 'Javier Mercado',
+    parents: {
+      father: 'Roberto Mercado',
+      mother: 'Rosario Bermudez'
+    }
+  },
+  novia: {
+    name: 'Ingrid Negrete',
+    parents: {
+      father: 'Rodolfo Negrete',
+      mother: 'Elsis Hoyos'
+    }
+  },
   fecha: new Date('2024-10-05'),
   fechaConfirm: new Date('2024-09-20'),
   imgHero,

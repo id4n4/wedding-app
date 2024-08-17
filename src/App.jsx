@@ -10,6 +10,7 @@ import {
   Letter,
   Menu,
   Outfit,
+  Parents,
   Reception,
   SharePhoto
 } from './components'
@@ -46,6 +47,7 @@ function App () {
       <Letter isVisible={isVisible} setIsVisible={setIsVisible} />
       <Hero />
       <Counter />
+      <Parents />
       <Ceremony />
       <Reception />
       <Outfit />
