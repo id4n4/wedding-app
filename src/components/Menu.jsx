@@ -42,13 +42,13 @@ export const Menu = () => {
             >
               Ir al lugar de la fiesta
             </a>
-            <a
+            {/* <a
               href='#music'
               onClick={(e) => handleClick(e, 'music')}
               className='transition hover:scale-105'
             >
               Sugerir canción
-            </a>
+            </a> */}
             <a
               href='#timeLine'
               // onClick={(e) => handleClick(e, 'timeLine')}
