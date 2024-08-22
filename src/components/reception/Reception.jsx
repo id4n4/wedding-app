@@ -23,6 +23,7 @@ export const Reception = () => {
         <ImgTemplate src={ChampanImage} alt='champan' />
         <div className='text-lg text-center uppercase md:text-xl text-primary'>
           <p>{content.reception.place}</p>
+          <p>{content.reception.state}</p>
           <p>{content.reception.city}</p>
           <p>{content.reception.time}</p>
         </div>

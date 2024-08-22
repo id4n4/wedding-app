@@ -28,7 +28,7 @@ export const content = {
   novia: {
     name: 'María de los Ángeles',
     parents: {
-      father: 'Rodolfo Negrete',
+      father: 'Rodolfo Negrette',
       mother: 'Elsis Hoyos'
     }
   },
@@ -47,6 +47,7 @@ export const content = {
   },
   reception: {
     place: 'Hotel bar restaurante casa arrecife',
+    state: 'El salvador',
     city: 'San bernardo del viento',
     time: '12:00 P.M.',
     location: {
@@ -55,7 +56,7 @@ export const content = {
     }
   },
   photos: [ia1, ia4, ia3, imgHero],
-  hashtag: 'mercadonegrete',
+  hashtag: 'mercadonegrette',
   timeLine,
   sheetApi: 'https://api.sheetapi.rest/api/v1/sheet/6fiXmjVGy_mkGbFBaLPfzm',
   sheetPlaylistApi: 'https://api.sheetapi.rest/api/v1/sheet/0qUcYWdhAjBnOHp7s3RzA',
