@@ -3,7 +3,7 @@ import heart from '../../../assets/SVGs/heart.svg'
 import { content } from '../../../config/content'
 import { obtenerSemanaCompleta } from '../../../functions/dateHelper'
 
-const weddingDay = content.fecha.getDate() + 1
+const weddingDay = content.fecha.getDate()
 
 export const Week = () => {
   const month = useMemo(
