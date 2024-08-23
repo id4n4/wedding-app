@@ -32,7 +32,7 @@ export const content = {
       mother: 'Elsis Hoyos'
     }
   },
-  fecha: new Date('2024-10-05'),
+  fecha: new Date('2024-10-05 10:00:00'),
   fechaConfirm: new Date('2024-09-20'),
   imgHero,
   phraseHero: ['Así que ya no son dos, sino una sola carne.', 'Lo que Dios ha unido, no lo desuna el hombre', 'Mateo 19:6'],
