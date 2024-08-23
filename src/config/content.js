@@ -20,7 +20,7 @@ export const content = {
   imgLogo,
   novio: 'Iván',
   novia: 'Aleja',
-  fecha: new Date('2024-08-24'),
+  fecha: new Date('2024-08-24 17:00:00'),
   fechaConfirm: new Date('2024-07-15'),
   imgHero,
   phraseHero: 'Uno solo puede ser vencido, pero dos pueden resistir.\n ! La cuerda de tres hilos no se rompe fácilmente !',
