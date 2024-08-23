@@ -9,7 +9,7 @@ export const Footer = () => {
             © 2024 - Todos los derechos reservados
           </p>
         </div>
-        <div className='flex flex-col gap-5 md:flex-row'>
+        <div className='flex flex-row gap-5'>
           <div className='text-primary'>
             <h3 className='font-bold'>Diseño</h3>
             <a

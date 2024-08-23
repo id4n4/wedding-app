@@ -7,7 +7,7 @@ export const ImgFlour = ({ isLeft, ...props }) => {
         src={flourImage}
         alt='flor'
         decoding='async'
-        className={`${isLeft ? '-scale-x-100 rotate-12 -translate-x-7' : '-rotate-12 translate-x-7'} w-[60vw] md:w-[40vw] opacity-20 `}
+        className={`${isLeft ? '-scale-x-100 rotate-12 -translate-x-7' : '-rotate-12 translate-x-7'} max-w-[500px] w-[60vw] md:w-[40vw] opacity-20 `}
       />
     </div>
   )
