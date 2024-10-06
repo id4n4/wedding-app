@@ -19,40 +19,42 @@ export const content = {
   music,
   imgLogo,
   novio: {
-    name: 'Roberto',
+    name: 'Jayr',
     parents: {
-      father: 'Roberto Mercado',
-      mother: 'Rosario Bermudez'
+      father: 'Yolis Doria Escobar',
+      mother: 'Calixto pacheco Noble'
     }
   },
   novia: {
-    name: 'María de los Ángeles',
+    name: 'Mayra',
     parents: {
-      father: 'Rodolfo Negrette',
-      mother: 'Elsis Hoyos'
+      father: 'Juan Torres Padilla (Q.E.P.D)',
+      mother: 'Sara Sibaja Arcia'
     }
   },
-  fecha: new Date('2024-10-05 10:00:00'),
-  fechaConfirm: new Date('2024-09-20'),
+  fecha: new Date('2024-12-30 19:00:00'),
+  fechaConfirm: new Date('2024-11-15'),
   imgHero,
-  phraseHero: ['Así que ya no son dos, sino una sola carne.', 'Lo que Dios ha unido, no lo desuna el hombre', 'Mateo 19:6'],
+  phraseHero: ['El amor que ha crecido en nosotros desde la primera vez que nos conocimos, nos ha llevado hoy a buscar en Dios la gracia para formar un hogar. Por esta razón y después de compartir este tiempo juntos, hemos decidido casarnos y celebrarlo con las personas más especiales.', '¡Te esperamos!'],
   ceremony: {
-    place: 'Parroquia San Bernardo Abad',
-    city: 'San bernardo del viento',
-    time: '10:00 A.M.',
+    place: 'Parroquia San Pablo Apóstol',
+    city: 'Montería',
+    time: '07:00 P.M.',
     location: {
-      lat: 9.356147416289378,
-      lng: -75.95170395175768
+      // 8.778955068084345, -75.86424749692904
+      lat: 8.778955068084345,
+      lng: -75.86424749692904
     }
   },
   reception: {
-    place: 'Hotel bar restaurante casa arrecife',
-    state: 'El salvador',
-    city: 'San bernardo del viento',
-    time: '12:00 P.M.',
+    place: 'Casa Baruc',
+    state: '(al lado del concesionario Mazda)',
+    city: 'Montería',
+    time: '8:00 P.M.',
     location: {
-      lat: 9.314103873038617,
-      lng: -76.09823644160083
+      // 8.779366505482832, -75.86510769321268
+      lat: 8.779366505482832,
+      lng: -75.86510769321268
     }
   },
   photos: [ia1, ia4, ia3, imgHero],
