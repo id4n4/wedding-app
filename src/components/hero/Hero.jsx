@@ -34,7 +34,7 @@ export const Hero = () => {
                 {/* <ImQuotesLeft className='mb-2 text-xl text-secondary' /> */}
                 {
                   content.phraseHero.map((phrase, index) => (
-                    <p key={index} className='font-sans text-xl text-center md:text-3xl'>
+                    <p key={index} className='text-lg text-center md:text-xl'>
                       {phrase}
                     </p>
                   ))

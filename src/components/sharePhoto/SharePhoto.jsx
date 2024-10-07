@@ -25,12 +25,12 @@ export const SharePhoto = () => {
     return () => clearInterval(interval)
   }, [])
   return (
-    <section className='flex flex-col w-full h-full font-sans '>
+    <section className='flex flex-col w-full font-sans '>
       <div>
         <div className=' bg-gradient-to-t from-secondary to-background to-10%'>
           <WaveUp />
         </div>
-        <div className='relative z-20 h-5 bg-darkBackground'>
+        <div className='relative z-20 h-5 py-8 bg-darkBackground'>
           <h2 className='text-2xl md:text-[3rem] text-center text-primary absolute bottom-full inset-0'>
             Un minuto, un segundo. Un instante que queda en la eternidad.
           </h2>

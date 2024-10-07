@@ -19,7 +19,7 @@ export const Week = () => {
       <div className='flex justify-center gap-3 text-xl md:gap-10'>
         {daysOfWeek.map(({ label, day }) => (
           <div key={label} className='flex flex-col items-center'>
-            <h2>{label}</h2>
+            <h2 className='text-xl trajan'>{label}</h2>
             {
               day === weddingDay
                 ? (

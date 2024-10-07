@@ -1,4 +1,3 @@
-import { Divider } from '@tremor/react'
 import { useEffect, useState } from 'react'
 import {
   Ceremony,
@@ -59,7 +58,6 @@ function App () {
       <TimeLine />
       <ConfirmAssistance />
       <Suggestions />
-      <Divider />
       <Menu />
       <Footer />
       <Volume hasVolume={hasVolume} onChangeVolume={onChangeVolume} />

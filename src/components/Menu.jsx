@@ -10,7 +10,7 @@ export const Menu = () => {
     element.scrollIntoView({ behavior: 'smooth', block: 'center' })
   }
   return (
-    <SectionLayout className='bg-menu'>
+    <SectionLayout>
       <MainLayout>
         <div className='flex items-center justify-between gap-10 py-10 '
         >
@@ -20,7 +20,7 @@ export const Menu = () => {
             decoding='async'
             className='w-1/2 '
           />
-          <div className='flex flex-col gap-5 text-white md:gap-2 text-end'>
+          <div className='flex flex-col gap-5 text-primary md:gap-2 text-end'>
             <a
               href='#counter'
               onClick={(e) => handleClick(e, 'counter')}
@@ -42,13 +42,13 @@ export const Menu = () => {
             >
               Ir al lugar de la fiesta
             </a>
-            {/* <a
+            <a
               href='#music'
               onClick={(e) => handleClick(e, 'music')}
               className='transition hover:scale-105'
             >
               Sugerir canción
-            </a> */}
+            </a>
             <a
               href='#timeLine'
               // onClick={(e) => handleClick(e, 'timeLine')}
