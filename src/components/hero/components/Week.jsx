@@ -15,7 +15,7 @@ export const Week = () => {
   }, [])
   return (
     <div className='flex flex-col items-center space-y-2'>
-      <h1 className='text-4xl tracking-[1rem] uppercase'>{month}</h1>
+      <h1 className='text-6xl tracking-[.5rem] text-primary capitalize'>{month}</h1>
       <div className='flex justify-center gap-3 text-xl md:gap-10'>
         {daysOfWeek.map(({ label, day }) => (
           <div key={label} className='flex flex-col items-center'>

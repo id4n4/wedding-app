@@ -11,6 +11,18 @@
   font-family: "trajan";
   src: url("./assets/fonts/trajanPro.ttf");
 }
+@font-face {
+  font-family: "trajan";
+  src: url("./assets/fonts/trajanPro.ttf");
+}
+@font-face {
+  font-family: "trajan-regular";
+  src: url("./assets/fonts/TrajanPro-Regular.ttf");
+}
+@font-face {
+  font-family: "greatVibes";
+  src: url("./assets/fonts/GreatVibes-Regular.ttf");
+}
 
 html {
   scroll-behavior: smooth;
@@ -53,6 +65,14 @@ h1 {
 
 .trajan {
   font-family: trajan;
+}
+
+.trajan-regular {
+  font-family: trajan-regular;
+}
+
+.greatVibes {
+  font-family: greatVibes;
 }
 
 :root {

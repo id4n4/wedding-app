@@ -9,10 +9,12 @@ import {
   Hero,
   Letter,
   Menu,
+  Music,
   Outfit,
   Parents,
   Reception,
-  SharePhoto
+  SharePhoto,
+  Suggestions
 } from './components'
 import { Volume } from './components/Volume'
 import { TimeLine } from './components/timeLine'
@@ -52,11 +54,11 @@ function App () {
       <Reception />
       <Outfit />
       <SharePhoto />
-      {/* <Music /> */}
+      <Music />
       <EnvelopeRain />
       <TimeLine />
       <ConfirmAssistance />
-      {/* <Suggestions /> */}
+      <Suggestions />
       <Divider />
       <Menu />
       <Footer />
