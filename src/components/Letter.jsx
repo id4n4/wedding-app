@@ -53,8 +53,8 @@ export const Letter = ({ isVisible, setIsVisible }) => {
                 <div className='top' />
                 <div className='shadow' />
                 <div className='absolute inset-0 flex items-center justify-center'>
-                  <div className='px-3 py-2 transition border-4 border-yellow-800 rounded-full bg-primary heart'>
-                    <img src={content.namesImg} alt='logo' className='w-[30px]' />
+                  <div className='px-1 transition border-4 border-yellow-800 rounded-full bg-secondary heart'>
+                    <img src={content.monograma} alt='logo' className='w-[80px]' />
                   </div>
                 </div>
               </motion.div>

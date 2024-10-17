@@ -5,10 +5,13 @@ import music from '../assets/music/Fonseca-QueSuerteTenerte.mp3'
 import ia1 from '../assets/img-personal/ia1.jpg'
 import ia3 from '../assets/img-personal/ia3.jpg'
 import ia4 from '../assets/img-personal/ia4.jpg'
+import ia5 from '../assets/img-personal/ia5.jpg'
+import ia6 from '../assets/img-personal/ia6.jpg'
 
 import timeLine from '../assets/SVGs/timeLine.svg'
 
 import namesImg from '../assets/SVGs/novio_novia.svg'
+import monograma from '../assets/SVGs/monogramas.svg'
 
 // Al modificar los datos, se debe tener en cuenta:
 // modificar index.html
@@ -57,11 +60,12 @@ export const content = {
       lng: -75.86510769321268
     }
   },
-  photos: [ia1, ia4, ia3, imgHero],
-  hashtag: 'mercadonegrette',
+  photos: [ia1, ia4, ia3, imgHero, ia5, ia6],
+  hashtag: 'pachecotorres',
   timeLine,
   sheetApi: 'https://api.sheetapi.rest/api/v1/sheet/6fiXmjVGy_mkGbFBaLPfzm',
   sheetPlaylistApi: 'https://api.sheetapi.rest/api/v1/sheet/0qUcYWdhAjBnOHp7s3RzA',
   namesImg,
+  monograma,
   urlWhatsapp: 'http://wa.link/lrpyi4'
 }
