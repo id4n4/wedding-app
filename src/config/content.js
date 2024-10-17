@@ -1,12 +1,14 @@
 import imgLogo from '../assets/SVGs/logo.svg'
-import imgHero from '../assets/img-personal/ia2.jpg'
+import imgHero from '../assets/img-personal/hero.jpg'
 import music from '../assets/music/Fonseca-QueSuerteTenerte.mp3'
 
-import ia1 from '../assets/img-personal/ia1.jpg'
-import ia3 from '../assets/img-personal/ia3.jpg'
-import ia4 from '../assets/img-personal/ia4.jpg'
-import ia5 from '../assets/img-personal/ia5.jpg'
-import ia6 from '../assets/img-personal/ia6.jpg'
+import img1 from '../assets/img-personal/img1.jpg'
+import img2 from '../assets/img-personal/img2.jpg'
+import img3 from '../assets/img-personal/img3.jpg'
+import img4 from '../assets/img-personal/img8.jpg'
+import img5 from '../assets/img-personal/img5.jpg'
+import img6 from '../assets/img-personal/img6.jpg'
+import img7 from '../assets/img-personal/img7.jpg'
 
 import timeLine from '../assets/SVGs/timeLine.svg'
 
@@ -60,11 +62,11 @@ export const content = {
       lng: -75.86510769321268
     }
   },
-  photos: [ia1, ia4, ia3, imgHero, ia5, ia6],
+  photos: [img1, img2, img3, img4, img5, img6, img7],
   hashtag: 'pachecotorres',
   timeLine,
   sheetApi: 'https://api.sheetapi.rest/api/v1/sheet/6fiXmjVGy_mkGbFBaLPfzm',
-  sheetPlaylistApi: 'https://api.sheetapi.rest/api/v1/sheet/0qUcYWdhAjBnOHp7s3RzA',
+  sheetPlaylistApi: 'https://api.sheetapi.rest/api/v1/sheet/7a3YNpbtu4QnFasbU48bM',
   namesImg,
   monograma,
   urlWhatsapp: 'http://wa.link/lrpyi4'
