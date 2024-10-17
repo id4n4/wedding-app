@@ -1,29 +1,19 @@
 import { Button } from '@tremor/react'
-import { useEffect, useState } from 'react'
 import { FaInstagram } from 'react-icons/fa'
 
+import { content } from '../../config/content'
 import { MainLayout } from '../../layouts/MainLayout'
 import { WaveDown } from '../generalComponents/WaveDown'
 import { WaveUp } from '../generalComponents/WaveUp'
-import { content } from '../../config/content'
+import {} from './style/style.css'
 
 const linkHashtag = 'https://www.instagram.com/explore/tags/' + content.hashtag
+const items = content.photos
 
 export const SharePhoto = () => {
-  const [items, setItems] = useState(content.photos)
   const openInstagram = () => {
     window.open(linkHashtag, '_blank')
   }
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setItems(prev => {
-        const last = prev.pop()
-        return [last, ...prev]
-      })
-    }, 5000)
-    return () => clearInterval(interval)
-  }, [])
   return (
     <section className='flex flex-col w-full font-sans '>
       <div>
@@ -56,14 +46,21 @@ export const SharePhoto = () => {
             </Button>
           </MainLayout>
         </div>
-        <div className='absolute top-0 bottom-0 z-0 flex flex-wrap w-full h-full overflow-hidden '
-        >
-          {items.map((item, idx) => (
-            <div key={idx} className='w-full h-full md:w-1/2 lg:w-1/3 xl:w-1/4'
-            >
-              <img src={item} alt='foto' decoding='async' className='object-cover w-full h-full' />
-            </div>
-          ))}
+        <div className='slider'>
+          <div className='slide-track'>
+            {items.map((item, idx) => (
+              <div key={idx} className='w-full h-full md:w-1/2 lg:w-1/3 xl:w-1/4'
+              >
+                <img src={item} alt='foto' decoding='async' className='object-cover w-full h-full' />
+              </div>
+            ))}
+            {items.map((item, idx) => (
+              <div key={idx} className='w-full h-full md:w-1/2 lg:w-1/3 xl:w-1/4'
+              >
+                <img src={item} alt='foto' decoding='async' className='object-cover w-full h-full' />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
