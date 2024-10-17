@@ -21,7 +21,7 @@ export const Reception = () => {
       <MainLayout id='reception'>
         <TitleSection title='Recepción' />
         <ImgTemplate src={ChampanImage} alt='champan' />
-        <div className='text-lg text-center uppercase md:text-xl text-primary'>
+        <div className='text-center uppercase text-md md:text-xl text-primary'>
           <p>{content.reception.place}</p>
           <p>{content.reception.state}</p>
           <p>{content.reception.city}</p>

@@ -23,14 +23,14 @@ export const Outfit = () => {
             </div>
             <div>
               <h2 className='text-5xl '>Damas:</h2>
-              <p className='text-2xl font-semibold uppercase'>Vestido Largo</p>
-              <p className='text-xl font-semibold'>
+              <p className='text-xl font-semibold uppercase md:text-2xl'>Vestido Largo</p>
+              <p className='font-semibold text-md'>
                 Se reserva el color plata y blanco
               </p>
             </div>
             <div>
               <h2 className='text-5xl '>Caballeros:</h2>
-              <p className='text-2xl font-semibold uppercase'>Smoking</p>
+              <p className='text-xl font-semibold uppercase md:text-2xl'>Smoking</p>
             </div>
           </div>
         </MainLayout>

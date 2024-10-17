@@ -14,12 +14,12 @@ export const Week = () => {
     return obtenerSemanaCompleta(content.fecha)
   }, [])
   return (
-    <div className='flex flex-col items-center space-y-2'>
-      <h1 className='text-6xl tracking-[.5rem] text-primary capitalize'>{month}</h1>
+    <div className='flex flex-col items-center px-5 space-y-2'>
+      <h1 className='text-3xl sm:text-6xl tracking-[.5rem] text-primary capitalize'>{month}</h1>
       <div className='flex justify-center gap-3 text-xl md:gap-10'>
         {daysOfWeek.map(({ label, day }) => (
           <div key={label} className='flex flex-col items-center'>
-            <h2 className='text-xl trajan'>{label}</h2>
+            <h2 className='text-lg sm:text-xl trajan'>{label}</h2>
             {
               day === weddingDay
                 ? (
@@ -30,7 +30,7 @@ export const Week = () => {
                       width={45}
                       className='z-0 ml-1'
                     />
-                    <p className='absolute top-0 z-20 left-4'>{day}</p>
+                    <p className='absolute inset-0 text-center'>{day}</p>
                   </div>)
                 : <p>{day}</p>
 

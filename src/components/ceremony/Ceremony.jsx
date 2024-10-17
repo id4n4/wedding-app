@@ -25,7 +25,7 @@ export const Ceremony = () => {
       <MainLayout id='ceremony'>
         <TitleSection title='Ceremonia' />
         <ImgTemplate src={ChurchImage} alt='Iglesia' />
-        <div className='text-lg text-center uppercase md:text-xl text-primary'>
+        <div className='text-center uppercase text-md md:text-xl text-primary'>
           <p>{content.ceremony.place}</p>
           <p>{content.ceremony.city}</p>
           <p>{content.ceremony.time}</p>

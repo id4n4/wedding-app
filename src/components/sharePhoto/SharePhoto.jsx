@@ -30,8 +30,8 @@ export const SharePhoto = () => {
         <div className=' bg-gradient-to-t from-secondary to-background to-10%'>
           <WaveUp />
         </div>
-        <div className='relative z-20 h-5 py-8 bg-darkBackground'>
-          <h2 className='text-2xl md:text-[3rem] text-center text-primary absolute bottom-full inset-0'>
+        <div className='relative z-20 px-5 bg-darkBackground'>
+          <h2 className='text-2xl md:text-[3rem] text-center text-primary'>
             Un minuto, un segundo. Un instante que queda en la eternidad.
           </h2>
         </div>

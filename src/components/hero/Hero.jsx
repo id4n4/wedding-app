@@ -38,13 +38,13 @@ export const Hero = () => {
             className='w-full bg-bottom bg-cover h-[600px] bg-no-repeat backdrop:blur-sm relative'
             style={{ backgroundImage: `url(${content.imgHero})` }}
           >
-            <div className='absolute bg-gradient-to-b from-white from-10% to-transparent top-0 left-0 right-0 h-[50px] ' />
-            <div className='absolute bg-gradient-to-r from-white from-10% to-transparent top-0 left-0 bottom-0 w-[50px]' />
-            <div className='absolute bg-gradient-to-l from-white from-10% to-transparent top-0 right-0 bottom-0 w-[50px]' />
-            <div className='absolute bg-gradient-to-t from-white from-10% to-transparent bottom-0 left-0 right-0 h-[50px]' />
+            <div className='absolute bg-gradient-to-b from-background  to-transparent top-0 left-0 right-0 h-[50px] ' />
+            <div className='absolute bg-gradient-to-r from-background  to-transparent top-0 left-0 bottom-0 w-[50px]' />
+            <div className='absolute bg-gradient-to-l from-background  to-transparent top-0 right-0 bottom-0 w-[50px]' />
+            <div className='absolute bg-gradient-to-t from-background  to-transparent bottom-0 left-0 right-0 h-[50px]' />
           </div>
         </motion.div>
-        <div className='relative'>
+        <div className='relative p-5'>
           <ImgFlour
             isLeft
             className='absolute left-0 -top-[15rem] rotate-[20deg] '
@@ -62,7 +62,7 @@ export const Hero = () => {
               <div className='max-w-[700px] mx-auto flex flex-col items-center gap-10'>
                 {/* <ImQuotesLeft className='mb-2 text-xl text-secondary' /> */}
                 {content.phraseHero.map((phrase, index) => (
-                  <p key={index} className='text-lg text-center md:text-xl'>
+                  <p key={index} className='text-center text-md sm:text-lg md:text-xl'>
                     {phrase}
                   </p>
                 ))}

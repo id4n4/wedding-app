@@ -12,13 +12,13 @@ export const Menu = () => {
   return (
     <SectionLayout>
       <MainLayout>
-        <div className='flex items-center justify-between gap-10 py-10 '
+        <div className='grid items-center gap-5 sm:grid-cols-2 '
         >
           <img
-            src={content.namesImg}
+            src={content.monograma}
             alt='Iván y Aleja'
             decoding='async'
-            className='w-1/2 '
+            className='w-full '
           />
           <div className='flex flex-col gap-5 text-primary md:gap-2 text-end'>
             <a
