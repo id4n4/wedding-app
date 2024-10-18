@@ -30,7 +30,7 @@ export const Outfit = () => {
             </div>
             <div>
               <h2 className='text-5xl '>Caballeros:</h2>
-              <p className='text-xl font-semibold uppercase md:text-2xl'>Smoking</p>
+              <p className='text-xl font-semibold uppercase md:text-2xl'>Smoking Negro</p>
             </div>
           </div>
         </MainLayout>

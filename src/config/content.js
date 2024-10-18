@@ -26,15 +26,15 @@ export const content = {
   novio: {
     name: 'Jayr',
     parents: {
-      father: 'Yolis Doria Escobar',
-      mother: 'Calixto pacheco Noble'
+      father: 'Juan Torres Padilla (Q.E.P.D)',
+      mother: 'Sara Sibaja Arcia'
     }
   },
   novia: {
     name: 'Mayra',
     parents: {
-      father: 'Juan Torres Padilla (Q.E.P.D)',
-      mother: 'Sara Sibaja Arcia'
+      father: 'Yolis Doria Escobar',
+      mother: 'Calixto pacheco Noble'
     }
   },
   fecha: new Date('2024-12-30 19:00:00'),
@@ -63,7 +63,7 @@ export const content = {
     }
   },
   photos: [img1, img2, img3, img4, img5, img6, img7],
-  hashtag: 'pachecotorres',
+  hashtag: 'torrespacheco',
   timeLine,
   sheetApi: 'https://api.sheetapi.rest/api/v1/sheet/6fiXmjVGy_mkGbFBaLPfzm',
   sheetPlaylistApi: 'https://api.sheetapi.rest/api/v1/sheet/7a3YNpbtu4QnFasbU48bM',

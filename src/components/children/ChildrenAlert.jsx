@@ -9,7 +9,7 @@ export const ChildrenAlert = () => {
       <MainLayout>
         <ImgTemplate src={childrenSvg} alt='Tarjeta' />
         <div className='text-sm text-center md:text-lg text-primary'>
-          <p>Nos encantan sus hijos, pero creemos que necesitan un noche libre.</p>
+          <p>Nos encantan sus hijos, pero creemos que necesitan una noche libre.</p>
           <p>Celebración exclusiva para adultos</p>
         </div>
       </MainLayout>
