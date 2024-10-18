@@ -69,5 +69,5 @@ export const content = {
   sheetPlaylistApi: 'https://api.sheetapi.rest/api/v1/sheet/7a3YNpbtu4QnFasbU48bM',
   namesImg,
   monograma,
-  urlWhatsapp: 'http://wa.link/lrpyi4'
+  urlWhatsapp: 'http://wa.link/630u8p'
 }

@@ -18,6 +18,7 @@ import {
 import { Volume } from './components/Volume'
 import { TimeLine } from './components/timeLine'
 import { content } from './config/content'
+import { ChildrenAlert } from './components/children/ChildrenAlert'
 
 const audio = new Audio(content.music)
 audio.loop = true
@@ -58,6 +59,7 @@ function App () {
       <TimeLine />
       <ConfirmAssistance />
       <Suggestions />
+      <ChildrenAlert />
       <Menu />
       <Footer />
       <Volume hasVolume={hasVolume} onChangeVolume={onChangeVolume} />
